@@ -14,7 +14,7 @@ Live: https://riipen-switchgear.vercel.app
 4. **Results.** All three rubrics side by side, for the 12 calls the rubrics were tuned on and for 4 new calls written after the last change.
 5. **The rubric.** Draft question against the anchored ladder for each skill, with the round three change marked.
 
-The first screen opens on the learner picked by `pickFeatured()` in `src/lib/metrics.ts`: the one where the draft rubric's certification call disagrees with the key in the most runs, among those where both anchored rubrics get it right. Today that is Ben (A2).
+The first screen opens on the learner picked by `pickFeatured()` in `src/lib/metrics.ts`: the one where the draft rubric's certification call disagrees with the key in the most runs, among those where both anchored rubrics get it right. Today that is Ben (A2), the draft's biggest miss; the page says so under his verdict, with the draft's overall rate (55 of 60 pass or fail calls matched the key).
 
 ## The three rubrics
 
@@ -28,9 +28,11 @@ Certification is computed by code, never by the grader: certified when every ski
 
 ## Data, and what is real
 
-**Role-plays are synthetic.** `data/roleplays.json` holds 16 calls in three made-up scenarios at a made-up provider, Northline Internet: "Charged twice" (A1 to A6), "Missed install" (B1 to B6) and "Price jump" (C1 to C4). Each call was written to show a set level on each skill. That intended level is the key, and `keyNotes` says which lines earn it. The anchors and the key come from the same standard, so agreement on A and B is a best case.
+**Role-plays are synthetic.** `data/roleplays.json` holds 16 calls in three made-up scenarios at a made-up provider, Northline Internet: "Charged twice" (A1 to A6), "Missed install" (B1 to B6) and "Price jump" (C1 to C4). One author wrote every call, its intended level on each skill (the key, with `keyNotes` saying which lines earn it) and the anchors. So agreement with the key is a best case, not an independent judgement.
 
-**C1 to C4 were written after the revised rubric was final**, to check it on calls it wasn't tuned on. They are a small, honest holdout, not a benchmark.
+**C1 to C4 were written after the revised rubric was final**, to test it on calls it wasn't tuned on. They test new examples; their key still comes from the same author. A small holdout, not a benchmark.
+
+**One key score was corrected after review.** A5 Resolution was 2 and is now 1: the learner says "There's nothing I can do about the timing" when the scenario offers an urgent refund, which is wrong information, a Not yet behaviour. All 15 runs had already scored it 1. The numbers below use the corrected key.
 
 **The grades are real.** `data/runs/<rubric>/<call>-r<n>.json` holds 240 recorded calls of `claude-sonnet-5-5` (16 calls, 3 rubrics, 5 runs), made on 2026-10-20 through the Claude Code CLI:
 
@@ -39,7 +41,7 @@ claude -p --model claude-sonnet-5-5 --system-prompt <grader prompt> --setting-so
   --strict-mcp-config --no-session-persistence --output-format json --json-schema <schema>
 ```
 
-Each run is a fresh session with no tools, no settings and no saved history, at the CLI's default sampling. The prompt goes in on stdin. The JSON schema forces five skills in order, each with evidence quotes first, then a reason, then a level. Every run file stores the SHA-256 of its full prompt, and a test rebuilds every prompt from today's code and checks it matches.
+Each run is a fresh session with no tools, no settings and no saved history, at the CLI's default sampling. The prompt goes in on stdin. The JSON schema asks for five skills, each with evidence quotes, a reason and a level, with the fields in that order; it doesn't force the order of the skills, so `scripts/grade.ts` rejects and retries any answer with skills out of order (none were). Every run file stores the SHA-256 of its full prompt, and a test rebuilds every prompt from today's code and checks it matches.
 
 No API key ships in the page and nothing calls a model at view time. The page reads `data/runs.json` and `data/results.json`.
 
@@ -51,10 +53,10 @@ From `npm run eval` (`data/results.json`). "Scores" are one skill in one run; "s
 
 | | Draft | Anchored | Revised |
 |---|---|---|---|
-| Scores that match the key | 168 (56%) | 275 (92%) | 287 (96%) |
+| Scores that match the key | 173 (58%) | 280 (93%) | 292 (97%) |
 | Within one level of the key | 285 | 300 | 300 |
-| Quadratic weighted kappa with the key | 0.720 | 0.952 | 0.975 |
-| Average lean against the key (levels) | -0.48 | -0.08 | -0.04 |
+| Quadratic weighted kappa with the key | 0.731 | 0.963 | 0.985 |
+| Average lean against the key (levels) | -0.46 | -0.07 | -0.03 |
 | Same score in all 5 runs (of 60) | 48 | 54 | 57 |
 | Certification calls that match the key (of 60) | 55 | 60 | 60 |
 | Calls whose certification changed between runs | 0 | 0 | 0 |
@@ -74,11 +76,16 @@ What I took from it:
 
 - **The draft grader is consistent and wrong in one direction.** It never flipped a certification call between runs. It scored below the key on average and failed both calls written as solid Proficient across the board (Ben, A2, and Mina, C1) in all 5 runs. Its reasons show why: with no anchors, it held learners to every option in the scenario ("did not mark it urgent", "did not fix the gmial.com email typo").
 - **Anchors fixed most of it.** Listening, Ownership and Close matched the key on every score in the tuning set.
-- **Resolution needed a second round.** Anchored Resolution matched on 40 of 60; after the round three rule, 51 of 60. On the new calls, anchored and revised both got Resolution 20 of 20, so the change didn't help or hurt there.
+- **Resolution needed a second round.** Anchored Resolution matched on 45 of 60; after the round three rule, 56 of 60. On the new calls, anchored and revised both got Resolution 20 of 20, so the change didn't help or hurt there.
 - **The new calls found the next rule to discuss.** On Priya (C4), turning on renewal reminders answers a complaint she raised. The key counts that as Listening (4). The grader counted it as an Ownership extra in 9 of 10 anchored and revised runs and held Listening at 3. That is a real judgement call for the coaches, not a bug.
-- **No quote was made up.** Every quote in all 240 runs was found word for word in the learner's lines. The check is in `src/lib/quotes.ts`: case-insensitive, straight and curly quotes treated the same, ellipses split into pieces that must each appear.
+- **No quote was made up.** Every quote in all 240 runs was found word for word in the learner's lines. The check is in `src/lib/quotes.ts`: case-insensitive, straight and curly quotes treated the same, and a quote with ellipses is split into pieces that must each appear as whole words, in order.
 
 The sample is small: 16 calls, 5 runs each, one model. It shows how a rubric drifts and how to measure it, not how often it would on real learners.
+
+## Known issues, for the next round
+
+- Scoring rule 2 says "Each level includes everything in the levels below it". That clashes with anchors that exclude each other, like Empathy 2 ("Only a stock line") and Empathy 3 (words that fit only this call). Better: "Pick the highest level whose anchor matches. Advanced requires Proficient." It's left as recorded because the runs are a record of the rubric as tested, and changing it means re-recording 160 runs against calls that have already been seen. It didn't show up in the results (under the anchored and revised rubrics, Empathy matched the key on 55 and 56 of 60 tuning scores, and 20 of 20 on the new calls), but a fourth round would fix it first.
+- The Listening versus Ownership call on Priya (C4), above.
 
 ## Reproduce
 

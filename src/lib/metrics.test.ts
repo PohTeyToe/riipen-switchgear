@@ -51,6 +51,16 @@ describe('checkQuote', () => {
   it('accepts ellipses between real pieces and curly quotes', () => {
     expect(checkQuote('I’m going to refund…right now', rp).status).toBe('agent')
   })
+  it('needs whole words, in order', () => {
+    const ben = RP.roleplays.find((r) => r.id === 'A2')!
+    expect(checkQuote("I'm refunding ... not ... the second payment now", ben).status).toBe('missing')
+    expect(checkQuote('the second payment now ... I see them both', ben).status).toBe('missing')
+    expect(checkQuote('I see them both ... the second payment now', ben).status).toBe('agent')
+  })
+  it('accepts a short true quote', () => {
+    const lena = RP.roleplays.find((r) => r.id === 'B6')!
+    expect(checkQuote('Done.', lena)).toMatchObject({ status: 'agent', line: 10 })
+  })
   it('flags customer words and paraphrases', () => {
     expect(checkQuote('My rent comes out Friday', rp).status).toBe('customer')
     expect(checkQuote('I will refund it immediately', rp).status).toBe('missing')

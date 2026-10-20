@@ -1,18 +1,9 @@
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import { RESULTS, RP, rubric, skillName } from './data'
 import { certifies, type RubricSummary, type SetId } from './lib/metrics'
 import { RUBRICS } from './lib/types'
 
 const pct = (a: number, b: number) => Math.round((100 * a) / b)
-
-/** Landis and Koch's bands, which they called arbitrary themselves. */
-export function kappaBand(k: number): string {
-  if (k > 0.8) return 'almost perfect'
-  if (k > 0.6) return 'substantial'
-  if (k > 0.4) return 'moderate'
-  if (k > 0.2) return 'fair'
-  return 'slight'
-}
 
 interface Row {
   what: string
@@ -34,7 +25,7 @@ const ROWS: Row[] = [
     note: 'One call per learner per run',
     num: (s) => `${s.learnerRuns - s.certWrong} of ${s.learnerRuns}`,
     sub: (s) =>
-      s.certWrong === 0 ? 'none wrong' : `${s.missedCert} failed who should pass, ${s.falseCert} passed who should fail`,
+      s.certWrong === 0 ? 'all match' : `${s.missedCert} failed that the key passes, ${s.falseCert} passed that the key fails`,
     share: (s) => (s.learnerRuns - s.certWrong) / s.learnerRuns,
   },
   {
@@ -60,9 +51,9 @@ const ROWS: Row[] = [
   },
   {
     what: 'Weighted kappa with the key',
-    note: 'Quadratic weights. 1 is perfect, 0 is chance',
+    note: 'Like matching the key, but a score one level off earns partial credit. 1 is perfect, 0 is chance',
     num: (s) => s.kappa.toFixed(2),
-    sub: (s) => kappaBand(s.kappa),
+    sub: () => 'quadratic weights',
   },
 ]
 
@@ -123,34 +114,53 @@ export function Results() {
         </div>
 
         <div className="certgrid">
-          {RUBRICS.map((r) => (
-            <div key={r}>
-              <h3>Who gets certified: {rubric(r).name.toLowerCase()}</h3>
-              <div className="cg" role="img" aria-label={`Certification by run under the ${rubric(r).name.toLowerCase()}`}>
-                <span />
-                {[1, 2, 3, 4, 5].map((n) => (
-                  <span className="hdr" key={n}>
-                    {n}
-                  </span>
+          <h3>Who gets certified, run by run</h3>
+          <table className="cg">
+            <caption className="sr-only">Certification call in each of the 5 runs under each rubric, and the key</caption>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <span className="sr-only">Learner</span>
+                </th>
+                {RUBRICS.map((r) => (
+                  <th scope="col" key={r} className="grp">
+                    {rubric(r).name.replace(' rubric', '')}
+                  </th>
                 ))}
-                <span />
-                <span className="hdr">key</span>
-                {list.map((rp) => {
-                  const keyCert = certifies(rp.key)
-                  return (
-                    <Fragment key={rp.id}>
-                      <span className="nm">{rp.learner}</span>
-                      {RESULTS.learners[rp.id][r].certs.map((c, i) => (
-                        <span key={i} className={`d${c ? ' yes' : ''}${c !== keyCert ? ' wrong' : ''}`} />
-                      ))}
-                      <span />
-                      <span className={`d k${keyCert ? ' yes' : ''}`} />
-                    </Fragment>
-                  )
-                })}
-              </div>
-            </div>
-          ))}
+                <th scope="col" className="grp">
+                  Key
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {list.map((rp) => {
+                const keyCert = certifies(rp.key)
+                return (
+                  <tr key={rp.id}>
+                    <th scope="row" className="nm">
+                      {rp.learner}
+                    </th>
+                    {RUBRICS.map((r) => {
+                      const certs = RESULTS.learners[rp.id][r].certs
+                      const yes = certs.filter(Boolean).length
+                      return (
+                        <td key={r} aria-label={`${rubric(r).name}: certified in ${yes} of ${certs.length} runs`}>
+                          <span className="dots" aria-hidden="true">
+                            {certs.map((c, i) => (
+                              <i key={i} className={`d${c ? ' yes' : ''}${c !== keyCert ? ' wrong' : ''}`} />
+                            ))}
+                          </span>
+                        </td>
+                      )
+                    })}
+                    <td aria-label={`Key: ${keyCert ? 'certified' : 'not certified'}`}>
+                      <i className={`d k${keyCert ? ' yes' : ''}`} aria-hidden="true" />
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
           <p className="cg-key">
             <i className="d yes" /> certified <i className="d" /> not certified <i className="d wrong" /> disagrees with the key
           </p>

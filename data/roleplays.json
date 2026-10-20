@@ -329,14 +329,14 @@
         "empathy": 1,
         "listening": 1,
         "ownership": 1,
-        "resolution": 2,
+        "resolution": 1,
         "close": 1
       },
       "keyNotes": {
         "empathy": "No acknowledgement at all, and \"There's nothing I can do about the timing\" (11).",
         "listening": "Asks for her name (3) and the problem (5) after she gave both.",
         "ownership": "Blames the bank (7).",
-        "resolution": "Offers a refund, but \"at some point\" (9).",
+        "resolution": "Offers a refund \"at some point\" (9), then says nothing can be done about the timing (11). The urgent refund exists, so that's wrong information.",
         "close": "\"Okay. Bye.\" (13). No recap, no check."
       },
       "lines": [

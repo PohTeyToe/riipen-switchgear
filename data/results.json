@@ -9,10 +9,10 @@
         "rubric": "draft",
         "runsPerRolePlay": 5,
         "scores": 300,
-        "exact": 168,
+        "exact": 173,
         "withinOne": 285,
-        "kappa": 0.72,
-        "bias": -0.48,
+        "kappa": 0.731,
+        "bias": -0.46,
         "items": 60,
         "unanimous": 48,
         "learners": 12,
@@ -50,10 +50,10 @@
           },
           {
             "skill": "resolution",
-            "exact": 13,
+            "exact": 18,
             "unanimous": 9,
             "items": 12,
-            "bias": -0.97
+            "bias": -0.88
           },
           {
             "skill": "close",
@@ -68,10 +68,10 @@
         "rubric": "anchored",
         "runsPerRolePlay": 5,
         "scores": 300,
-        "exact": 275,
+        "exact": 280,
         "withinOne": 300,
-        "kappa": 0.952,
-        "bias": -0.08,
+        "kappa": 0.963,
+        "bias": -0.07,
         "items": 60,
         "unanimous": 54,
         "learners": 12,
@@ -109,10 +109,10 @@
           },
           {
             "skill": "resolution",
-            "exact": 40,
+            "exact": 45,
             "unanimous": 6,
             "items": 12,
-            "bias": -0.33
+            "bias": -0.25
           },
           {
             "skill": "close",
@@ -127,10 +127,10 @@
         "rubric": "revised",
         "runsPerRolePlay": 5,
         "scores": 300,
-        "exact": 287,
+        "exact": 292,
         "withinOne": 300,
-        "kappa": 0.975,
-        "bias": -0.04,
+        "kappa": 0.985,
+        "bias": -0.03,
         "items": 60,
         "unanimous": 57,
         "learners": 12,
@@ -168,10 +168,10 @@
           },
           {
             "skill": "resolution",
-            "exact": 51,
+            "exact": 56,
             "unanimous": 10,
             "items": 12,
-            "bias": -0.15
+            "bias": -0.07
           },
           {
             "skill": "close",

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { REPO, RESULTS, RP, rolePlay, rubric, runsFor, scenarioOf, skillName } from './data'
 import { certifies } from './lib/metrics'
-import { checkQuote, normalize, quotePieces } from './lib/quotes'
+import { checkQuote, pieceRanges, quotePieces } from './lib/quotes'
 import type { Level, RolePlay, RubricId, SkillId } from './lib/types'
 import { RUBRICS, SKILLS } from './lib/types'
 import { coachNote, levelName, noteLines, verdict } from './lib/view'
@@ -100,6 +100,7 @@ export function App() {
             ) : (
               <>
                 <Verdict rp={rp} rb={rb} />
+                {lid === RESULTS.featured && rb === 'draft' && <FeaturedNote />}
                 <Board rp={rp} rb={rb} sel={sel} setSel={setSel} flipGen={flipGen} mine={mode === 'revealed' ? mine : null} />
                 <Legend rb={rb} />
                 <Detail rp={rp} rb={rb} sel={sel} mine={mine} />
@@ -113,7 +114,7 @@ export function App() {
                 <Coach rp={rp} rb={rb} />
               </>
             )}
-            <Picker lid={lid} rb={rb} onPick={pickLearner} />
+            <Picker lid={lid} rb={rb} onPick={pickLearner} hideCerts={mode === 'self'} />
           </div>
 
           <aside className="side" aria-label="Transcript" id="transcript">
@@ -142,12 +143,12 @@ export function App() {
   )
 }
 
-function Picker({ lid, rb, onPick }: { lid: string; rb: RubricId; onPick: (id: string) => void }) {
+function Picker({ lid, rb, onPick, hideCerts }: { lid: string; rb: RubricId; onPick: (id: string) => void; hideCerts: boolean }) {
   return (
     <div>
       <p className="control-label" id="pick-label">
         Try another learner{' '}
-        <span style={{ fontWeight: 400, color: 'var(--ink-3)' }}>(filled dots: runs that certified them)</span>
+        {!hideCerts && <span style={{ fontWeight: 400, color: 'var(--ink-3)' }}>(filled dots: runs that certified them)</span>}
       </p>
       <div className="picker" role="group" aria-labelledby="pick-label">
         {RP.scenarios.map((sc) => (
@@ -167,14 +168,20 @@ function Picker({ lid, rb, onPick }: { lid: string; rb: RubricId; onPick: (id: s
                     className="chip"
                     aria-pressed={lid === r.id}
                     onClick={() => onPick(r.id)}
-                    aria-label={`${r.learner}, ${sc.title}. Certified in ${yes} of ${certs.length} runs under the ${rubric(rb).name.toLowerCase()}.`}
+                    aria-label={
+                      hideCerts
+                        ? `${r.learner}, ${sc.title}`
+                        : `${r.learner}, ${sc.title}. Certified in ${yes} of ${certs.length} runs under the ${rubric(rb).name.toLowerCase()}.`
+                    }
                   >
                     <span className="nm">{r.learner}</span>
-                    <span className="pips" aria-hidden="true">
-                      {certs.map((c, i) => (
-                        <i key={i} className={`pip${c ? ' on' : ''}`} />
-                      ))}
-                    </span>
+                    {!hideCerts && (
+                      <span className="pips" aria-hidden="true">
+                        {certs.map((c, i) => (
+                          <i key={i} className={`pip${c ? ' on' : ''}`} />
+                        ))}
+                      </span>
+                    )}
                   </button>
                 )
               })}
@@ -339,6 +346,17 @@ function Verdict({ rp, rb }: { rp: RolePlay; rb: RubricId }) {
       <p className="verdict">{v.head}</p>
       <p className="subverdict">{v.sub}</p>
     </div>
+  )
+}
+
+function FeaturedNote() {
+  const t = RESULTS.summaries.tuning.draft
+  return (
+    <p className="featured-note">
+      {rolePlay(RESULTS.featured).learner} opens the page because he is the draft rubric's biggest certification miss.
+      Across all {t.learners} calls it was tuned on, the draft's pass or fail matched the key in{' '}
+      {t.learnerRuns - t.certWrong} of {t.learnerRuns} runs.
+    </p>
   )
 }
 
@@ -513,6 +531,14 @@ function Detail({
               <span className={`qt${bad ? ' bad' : ''}`}>{q}</span>
               <span className={`st${bad ? ' bad' : ''}`}>
                 {c.status === 'agent' ? `Word for word, line ${c.line + 1}` : c.status === 'customer' ? "The customer's words, not the learner's" : 'Not in the transcript'}
+                {c.line >= 0 && (
+                  <>
+                    {' '}
+                    <a className="hide-lg" href={`#line-${c.line + 1}`}>
+                      show in the call
+                    </a>
+                  </>
+                )}
               </span>
             </li>
           )
@@ -527,12 +553,7 @@ function Detail({
 }
 
 function markLine(text: string, pieces: string[]): ReactNode[] {
-  const low = text.toLowerCase()
-  const spans: [number, number][] = []
-  for (const p of pieces) {
-    const i = low.indexOf(p)
-    if (i >= 0) spans.push([i, i + p.length])
-  }
+  const spans = pieceRanges(text, pieces)
   if (!spans.length) return [text]
   spans.sort((a, b) => a[0] - b[0])
   const merged: [number, number][] = []
@@ -563,7 +584,7 @@ function Transcript({ rp, rb, sel, hideScores }: { rp: RolePlay; rb: RubricId; s
     const ps = g.evidence.flatMap(quotePieces)
     const lines = new Set<number>()
     rp.lines.forEach(([, t], i) => {
-      if (ps.some((p) => normalize(t).includes(p))) lines.add(i)
+      if (pieceRanges(t, ps).length) lines.add(i)
     })
     return { pieces: ps, hitLines: lines }
   }, [rp, rb, sel, hideScores])
@@ -587,7 +608,7 @@ function Transcript({ rp, rb, sel, hideScores }: { rp: RolePlay; rb: RubricId; s
       </details>
       <ol className="lines" ref={listRef} aria-label="Transcript">
         {rp.lines.map(([who, text], i) => (
-          <li key={i} className={`${who === 'agent' ? 'agent' : 'cust'}${hitLines.has(i) ? ' hit' : ''}`}>
+          <li key={i} id={`line-${i + 1}`} className={`${who === 'agent' ? 'agent' : 'cust'}${hitLines.has(i) ? ' hit' : ''}`}>
             <span className="n">{i + 1}</span>
             <span>
               <span className="sp">{who === 'agent' ? rp.learner : sc.customer}</span>
@@ -635,13 +656,12 @@ function Method() {
             <h3>What isn't</h3>
             <ul>
               <li>
-                All {RP.roleplays.length} role-plays are synthetic, written for this demo. Each was written to show a
-                set level on each skill, and that level is the key. A real key would come from your coaches.
+                All {RP.roleplays.length} role-plays are synthetic. One author wrote every call, its intended level on
+                each skill (the key) and the anchors. A real key would come from your coaches.
               </li>
               <li>
-                The anchors and the key were written from the same standard, so the match on the first 12 is a best
-                case. The four "Price jump" calls were written after the revised rubric was final, to check it on calls
-                it wasn't tuned on.
+                So the match with the key is a best case. The four "Price jump" calls were written after the revised
+                rubric was final: they test it on new calls, but the key for them comes from the same author.
               </li>
               <li>The runs agreeing with each other doesn't depend on the key at all.</li>
               <li>
