@@ -1,0 +1,53 @@
+{
+  "roleplay": "A3",
+  "rubric": "revised",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:13.629Z",
+  "durationMs": 8726,
+  "promptSha256": "480da6ce2adbc736f5e9670799aa6fcaf30013fb07a2c2a40ff467d4da8f351f",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for any inconvenience this may have caused.",
+        "I understand your frustration."
+      ],
+      "reason": "Only stock lines that would fit any call; nothing names Dana's double charge or her rent due Friday.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just so I'm clear, there are two charges of $84.50 on the 3rd, for the same bill?"
+      ],
+      "reason": "The agent plays back the double charge in their own words and checks it, but ignores the missing email mentioned in passing, so not level 4.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one right now.",
+        "I've submitted it, so you don't need to do anything else."
+      ],
+      "reason": "Uses first person for actions taken within the call, but does nothing extra to prevent recurrence.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund takes 3 to 5 business days to reach your bank account."
+      ],
+      "reason": "Refunds the duplicate with an amount and time frame, but doesn't check it against the Friday rent deadline or offer the urgent option (about 2 business days), so not level 4.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So to recap, I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days. Is there anything else I can help you with?"
+      ],
+      "reason": "Recaps the action and timing and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

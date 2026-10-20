@@ -1,0 +1,52 @@
+{
+  "roleplay": "C2",
+  "rubric": "anchored",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:08.604Z",
+  "durationMs": 6331,
+  "promptSha256": "4255894ebc32fcc04d84351f0f034802ffa5b130187c20e6d38fb6358cad8334",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent names the specific $25 jump and its effect on this customer, but never refers back to her situation later in the call.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?"
+      ],
+      "reason": "The agent asks only for a detail the fix needs and never plays the problem back to check it; the 'no one warned me' concern is not addressed.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill."
+      ],
+      "reason": "The action is described only in passive or hedged wording ('can be applied', 'that'll get changed') with no 'I' doing it.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent gives a valid fix with an amount, duration and start date, but offers no choice such as the $60 plan and does not check that the fix suits her. It also never addresses the missing warning, for example with renewal reminders.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps the rate and start, and checks whether anything else is needed, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

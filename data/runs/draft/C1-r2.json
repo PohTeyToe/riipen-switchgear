@@ -1,0 +1,54 @@
+{
+  "roleplay": "C1",
+  "rubric": "draft",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:55.764Z",
+  "durationMs": 6992,
+  "promptSha256": "42f51d53de4ded744e15792fe0b33eedf75c00771b9dad044d58cbfba21ddcaf",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "A $25 jump with no warning is a nasty surprise."
+      ],
+      "reason": "The agent acknowledged the surprise and the lack of warning, but did not address her worry about switching or apologize.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your bill went from $65 to $90 this month, and you want to know why. Is that right?"
+      ],
+      "reason": "The agent paraphrased and confirmed the main issue, but left out her complaint that nobody warned her and her possible switch, so the summary was incomplete.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Let me take a look.",
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months"
+      ],
+      "reason": "The agent took action right away, but didn't apologize for the missing warning or take responsibility for it.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Your 12-month promotion ended, so you went to the regular price.",
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill."
+      ],
+      "reason": "The agent explained the price change and offered a fair loyalty rate, but did not mention the $60 plan option, did not turn on renewal reminders (which would fix the warning problem), and gave no reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've moved you to the loyalty rate of $75 a month for 12 months, and it starts on your next bill. Is there anything else I can help with?",
+        "Thanks for staying with us, Olivia. Have a good evening."
+      ],
+      "reason": "The agent recapped the outcome, checked for other needs, and ended politely, but gave no reference number and did not mention when the 12 months end or any reminder.",
+      "level": 3
+    }
+  ]
+}

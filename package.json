@@ -1,0 +1,31 @@
+{
+  "name": "rubric-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5104 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5104 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "grade": "tsx scripts/grade.ts",
+    "eval": "tsx scripts/eval.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/instrument-sans": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}

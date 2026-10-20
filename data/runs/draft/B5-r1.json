@@ -1,0 +1,54 @@
+{
+  "roleplay": "B5",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:23.649Z",
+  "durationMs": 5226,
+  "promptSha256": "3f6135010e64fd4f489dd1f48fdc030a2d8d8123461e82232e9be62c6ab57ebd",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Sorry about that.",
+        "Okay, have a good one."
+      ],
+      "reason": "The agent offered a brief, generic apology and never acknowledged the customer's lost day off or his frustration.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "What's the issue exactly?",
+        "That's a dispatch problem."
+      ],
+      "reason": "The agent asked what the problem was right after the customer had stated it, and the customer had to point this out, which shows the agent wasn't listening.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Customer service doesn't book technicians. You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent pushed the issue back onto the customer and took no responsibility for it, even though the agent could book a new slot.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent did not rebook the visit, apply the $25 missed-appointment credit, add a technician call-ahead note, or give a reference number, so nothing was resolved, and the claim that the agent couldn't rebook was wrong.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay, have a good one."
+      ],
+      "reason": "The agent ended the call abruptly after the customer said \"Unbelievable,\" with no summary, next steps, or check that the customer was satisfied.",
+      "level": 1
+    }
+  ]
+}

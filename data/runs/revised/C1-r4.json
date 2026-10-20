@@ -1,0 +1,52 @@
+{
+  "roleplay": "C1",
+  "rubric": "revised",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:08.420Z",
+  "durationMs": 8908,
+  "promptSha256": "98151abd3ec17eff12655da9d063038ee6cdc61a77fd5a945b3309eba9e8cf2c",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "A $25 jump with no warning is a nasty surprise."
+      ],
+      "reason": "The agent names this customer's specific situation (the $25 jump with no warning), but never refers back to it later; the closing line is generic.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your bill went from $65 to $90 this month, and you want to know why. Is that right?"
+      ],
+      "reason": "The agent plays the problem back in their own words and checks it, but does not address the passing concerns about switching or not being warned.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill.",
+        "I've moved you to the loyalty rate of $75 a month for 12 months"
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but adds no extra step such as renewal reminders to prevent a repeat.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill."
+      ],
+      "reason": "The agent fixes the bill issue with a clear amount, duration and start date, but offers no choice and does not check that it fits her situation.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've moved you to the loyalty rate of $75 a month for 12 months, and it starts on your next bill. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or way back if the fix fails.",
+      "level": 3
+    }
+  ]
+}

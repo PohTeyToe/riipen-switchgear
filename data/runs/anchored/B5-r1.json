@@ -1,0 +1,54 @@
+{
+  "roleplay": "B5",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:20.471Z",
+  "durationMs": 4852,
+  "promptSha256": "4d80a1b1ddcef84b53c1063b96633883f02106f123d968b809d60a3e7c30c5d2",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Sorry about that.",
+        "Okay, have a good one."
+      ],
+      "reason": "Only a stock apology appears, and the closing 'have a good one' brushes off a customer who took the day off, so a Not yet behaviour is present.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "What's the issue exactly?"
+      ],
+      "reason": "The agent asked the customer to repeat the problem he had already stated in his first line, and never played it back.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "That's a dispatch problem. Customer service doesn't book technicians. You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent deflects to dispatch and sends the customer elsewhere instead of acting, even though the agent can rebook.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "No fix was offered, no rebooking or $25 credit, and the claim that customer service cannot rebook is wrong information.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay, have a good one."
+      ],
+      "reason": "The call ends with no recap and no check for anything else needed, and no reference number was given.",
+      "level": 1
+    }
+  ]
+}

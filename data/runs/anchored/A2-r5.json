@@ -1,0 +1,53 @@
+{
+  "roleplay": "A2",
+  "rubric": "anchored",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:59.399Z",
+  "durationMs": 10289,
+  "promptSha256": "7eac08a313d950e4fac21699bd264669353f1dc50ce38248ed9eb76d669e4f42",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Being charged twice for the same bill is frustrating, and I'm sorry that happened."
+      ],
+      "reason": "The agent names the specific problem of being charged twice for the same bill, which fits only this call, but never refers back to her situation (rent on Friday) later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to confirm, you're seeing two payments of $84.50 on the 3rd, both for this month's bill?"
+      ],
+      "reason": "The agent plays the problem back in their own words and checks it before fixing, but ignores the passing mention of the missing email, so there is no level 4.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm refunding the second payment now.",
+        "I've processed it on my end, so there's nothing you need to do."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done within the call, but takes no extra step to prevent a recurrence.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund will reach your bank in 3 to 5 business days. It'll show up as a credit from Northline.",
+        "I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days."
+      ],
+      "reason": "The agent gives the correct refund with an amount and time frame, but does not check it against her rent due Friday or offer the urgent option.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days. Is there anything else I can help you with today?"
+      ],
+      "reason": "The agent recaps what was done and what happens next and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

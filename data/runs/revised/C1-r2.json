@@ -1,0 +1,52 @@
+{
+  "roleplay": "C1",
+  "rubric": "revised",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:55.955Z",
+  "durationMs": 9116,
+  "promptSha256": "98151abd3ec17eff12655da9d063038ee6cdc61a77fd5a945b3309eba9e8cf2c",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "A $25 jump with no warning is a nasty surprise."
+      ],
+      "reason": "The agent names this customer's specific situation (the $25 jump with no warning), but never refers back to it later, so level 4 isn't met.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your bill went from $65 to $90 this month, and you want to know why. Is that right?"
+      ],
+      "reason": "The agent plays the problem back in their own words and checks it before fixing it, but never deals with the customer's passing concern that nobody warned her something was ending, or with her thoughts of switching.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill.",
+        "I've moved you to the loyalty rate of $75 a month for 12 months"
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but takes no extra step, such as turning on renewal reminders, to stop the problem recurring.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Your 12-month promotion ended, so you went to the regular price. I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill."
+      ],
+      "reason": "The agent explains the change and gives a fix with an amount, a duration and a start date, but doesn't check that it suits her situation or offer a choice of options.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've moved you to the loyalty rate of $75 a month for 12 months, and it starts on your next bill. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps what was done and what happens next and checks for anything else, but gives no reference number or named way back.",
+      "level": 3
+    }
+  ]
+}

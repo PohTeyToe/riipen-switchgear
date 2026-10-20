@@ -1,0 +1,55 @@
+{
+  "roleplay": "A3",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:06:36.529Z",
+  "durationMs": 5808,
+  "promptSha256": "e048ac47519713e2991950087e917c6d720d3fbf674f9368f3dd21aac660a3fd",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for any inconvenience this may have caused.",
+        "I understand your frustration."
+      ],
+      "reason": "The agent used generic, scripted empathy phrases and never acknowledged the specific impact of rent coming out Friday.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just so I'm clear, there are two charges of $84.50 on the 3rd, for the same bill?"
+      ],
+      "reason": "The agent confirmed the duplicate charge details but ignored the Friday rent deadline and the missing email, both of which the customer stated.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one right now.",
+        "I've submitted it, so you don't need to do anything else."
+      ],
+      "reason": "The agent took action on the refund immediately, but did not take ownership of the Friday deadline or the missing-email problem.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund takes 3 to 5 business days to reach your bank account.",
+        "I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days."
+      ],
+      "reason": "The agent refunded the duplicate but did not mark it urgent (about 2 business days, which would arrive before Friday rent), did not fix the email typo (gmial.com), did not add an account note to flag a duplicate payment, and gave no reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So to recap, I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days. Is there anything else I can help you with?",
+        "Thank you for calling Northline Internet. Have a great day."
+      ],
+      "reason": "The close was polite and included a recap and an offer of more help, but the recap was incomplete, there was no reference number, and the agent didn't address the customer's unresolved concerns, which were left with a lukewarm 'Fine.'",
+      "level": 2
+    }
+  ]
+}

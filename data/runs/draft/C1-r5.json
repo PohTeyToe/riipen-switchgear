@@ -1,0 +1,53 @@
+{
+  "roleplay": "C1",
+  "rubric": "draft",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:39.297Z",
+  "durationMs": 7029,
+  "promptSha256": "42f51d53de4ded744e15792fe0b33eedf75c00771b9dad044d58cbfba21ddcaf",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "A $25 jump with no warning is a nasty surprise."
+      ],
+      "reason": "The agent acknowledged the surprise and the missing warning, but did not address her worry about switching or show further care.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your bill went from $65 to $90 this month, and you want to know why. Is that right?"
+      ],
+      "reason": "The agent restated the billing issue and checked it, but missed her repeated point that nobody warned her and her mention of switching.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Let me take a look.",
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months"
+      ],
+      "reason": "The agent took charge and acted on the issue without passing it on, but did not apologize for the lack of warning or address the cause.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Your 12-month promotion ended, so you went to the regular price. I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill."
+      ],
+      "reason": "The agent explained the price change and applied a loyalty rate, but did not offer the $60 plan, did not set up renewal reminders (the gap she complained about), gave no reference number, and applied the rate without asking whether she wanted it.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've moved you to the loyalty rate of $75 a month for 12 months, and it starts on your next bill. Is there anything else I can help with?",
+        "Thanks for staying with us, Olivia. Have a good evening."
+      ],
+      "reason": "The agent recapped the rate and start date, checked for other needs and ended politely, but gave no reference number and did not mention the rate's end or reminders.",
+      "level": 3
+    }
+  ]
+}

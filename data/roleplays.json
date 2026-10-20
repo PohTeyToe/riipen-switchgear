@@ -1,0 +1,1165 @@
+{
+  "note": "Synthetic. Written for this demo; every role-play was written to show a set level on each skill, and that level is the key. Role-plays C1 to C4, a third scenario, were written after the revised rubric was final, to test it on calls it was not tuned on. Northline Internet and every customer are made up.",
+  "scenarios": [
+    {
+      "id": "A",
+      "title": "Charged twice",
+      "customer": "Dana",
+      "brief": "Dana Whitfield calls Northline Internet, a made-up provider. Her monthly bill of $84.50 was taken from her bank account twice on the 3rd. Today is Tuesday. The email address on her account has a typo (gmial.com), so payment emails never reach her. What the agent can do: refund the duplicate, which reaches the bank in 3 to 5 business days; mark the refund urgent, which sends it today so it reaches the bank in about 2 business days; fix contact details; add an account note that flags a duplicate payment before it is charged; give a reference number."
+    },
+    {
+      "id": "B",
+      "title": "Missed install",
+      "customer": "Marcus",
+      "brief": "Marcus Tan booked an internet installation with Northline Internet, a made-up provider, for today from 8 am to noon. It is now 1:30 pm and no technician came. Install is free on his plan. Policy: every missed appointment gets a $25 account credit. What the agent can do: book a new slot (tomorrow 8 to 10 am, or Saturday 9 to 11 am); add a note asking the technician to call 30 minutes ahead; remove fees that do not apply; give a reference number."
+    },
+    {
+      "id": "C",
+      "title": "Price jump",
+      "customer": "Olivia",
+      "brief": "Olivia Grant calls Northline Internet, a made-up provider. Her monthly bill went from $65 to $90 because her 12-month promotion ended. Nobody warned her it was ending. She says she may switch providers. What the agent can do: explain why the price changed; apply a loyalty rate of $75 a month for 12 months, starting with her next bill; or move her to a slower plan at $60 a month, starting next bill; turn on renewal reminders so she is told 30 days before any rate ends; give a reference number."
+    }
+  ],
+  "roleplays": [
+    {
+      "id": "A1",
+      "scenario": "A",
+      "learner": "Amira",
+      "key": {
+        "empathy": 4,
+        "listening": 4,
+        "ownership": 4,
+        "resolution": 4,
+        "close": 4
+      },
+      "keyNotes": {
+        "empathy": "Names the double charge (line 3), then shapes the fix around her rent (9) and comes back to it at the end (15).",
+        "listening": "Plays it all back (5), and fixes the missing email she mentioned in passing (11).",
+        "ownership": "\"I've just issued the refund\" (7), and adds a duplicate flag nobody asked for (11).",
+        "resolution": "Refund with a date, marked urgent because of her rent, then checks Thursday works (9).",
+        "close": "Recap, a reference number and an anything-else check (13)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Thanks for calling Northline, this is Amira. Who am I speaking with?"
+        ],
+        [
+          "customer",
+          "Dana Whitfield. You took my internet payment twice this month. $84.50, two times, on the 3rd."
+        ],
+        [
+          "agent",
+          "Thanks, Dana. Having the same bill come out of your bank account twice is stressful. Let me look at it right now."
+        ],
+        [
+          "customer",
+          "It is. My rent comes out Friday and now I'm $84 short. And I never got an email about the payment, which is half the reason I didn't catch it."
+        ],
+        [
+          "agent",
+          "So that's two charges of $84.50 on the 3rd, rent due Friday, and no payment email. Did I get that right?"
+        ],
+        [
+          "customer",
+          "Yeah, that's it."
+        ],
+        [
+          "agent",
+          "I can see both charges. The second one is a duplicate on our side, not anything you did. I've just issued the refund for $84.50."
+        ],
+        [
+          "customer",
+          "Okay. When do I get it back?"
+        ],
+        [
+          "agent",
+          "A normal refund takes 3 to 5 business days, which could miss Friday. Because of your rent, I've marked it urgent, so it goes out today and should reach your bank by Thursday. Does that work for you?"
+        ],
+        [
+          "customer",
+          "Thursday works. Thank you."
+        ],
+        [
+          "agent",
+          "About the missing email: the address on your account says gmial.com instead of gmail.com. I've fixed it, so payment emails will reach you now. I've also added a note to your account so a duplicate payment gets flagged before it's charged."
+        ],
+        [
+          "customer",
+          "Oh wow, okay. Thanks."
+        ],
+        [
+          "agent",
+          "To recap: the duplicate $84.50 is refunded and marked urgent, so it should be in your bank by Thursday, and your email is fixed. Your reference number is RF-20417 if anything doesn't show up. Is there anything else I can help with?"
+        ],
+        [
+          "customer",
+          "No, that's everything."
+        ],
+        [
+          "agent",
+          "I hope Friday goes smoothly, Dana. Thanks for your patience."
+        ]
+      ]
+    },
+    {
+      "id": "A2",
+      "scenario": "A",
+      "learner": "Ben",
+      "key": {
+        "empathy": 3,
+        "listening": 3,
+        "ownership": 3,
+        "resolution": 3,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "\"Being charged twice for the same bill is frustrating\" fits only this call (3). He never comes back to the rent.",
+        "listening": "Plays the charges back and checks (5). Lets the missing email go.",
+        "ownership": "\"I'm refunding the second payment now\" (7).",
+        "resolution": "Refund with a time frame (9). Never checks it against her Friday rent.",
+        "close": "Recap and an anything-else check (11). No reference number."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline Internet, this is Ben. Can I get your name?"
+        ],
+        [
+          "customer",
+          "Dana Whitfield. You charged me twice for my internet. $84.50, twice, on the 3rd."
+        ],
+        [
+          "agent",
+          "Thanks, Dana. Being charged twice for the same bill is frustrating, and I'm sorry that happened."
+        ],
+        [
+          "customer",
+          "It is. My rent comes out Friday. Also, I didn't get any email about the payment."
+        ],
+        [
+          "agent",
+          "Just to confirm, you're seeing two payments of $84.50 on the 3rd, both for this month's bill?"
+        ],
+        [
+          "customer",
+          "Yes."
+        ],
+        [
+          "agent",
+          "I see them both. I'm refunding the second payment now."
+        ],
+        [
+          "customer",
+          "How long will that take?"
+        ],
+        [
+          "agent",
+          "The refund will reach your bank in 3 to 5 business days. It'll show up as a credit from Northline."
+        ],
+        [
+          "customer",
+          "Okay, I guess that's fine."
+        ],
+        [
+          "agent",
+          "I've processed it on my end, so there's nothing you need to do. To recap, I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days. Is there anything else I can help you with today?"
+        ],
+        [
+          "customer",
+          "No, that's it."
+        ],
+        [
+          "agent",
+          "Thanks for calling, Dana. Have a good day."
+        ]
+      ]
+    },
+    {
+      "id": "A3",
+      "scenario": "A",
+      "learner": "Chloe",
+      "key": {
+        "empathy": 2,
+        "listening": 3,
+        "ownership": 3,
+        "resolution": 3,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "Only stock lines: \"I apologize for any inconvenience\" (3) and \"I understand your frustration\" (5). Nothing about the rent.",
+        "listening": "Plays the charges back and checks (5).",
+        "ownership": "\"I'm going to refund the second one right now\" (7).",
+        "resolution": "Refund with a time frame (9).",
+        "close": "Recap and an anything-else check (11)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Thank you for calling Northline Internet, my name is Chloe. May I have your name, please?"
+        ],
+        [
+          "customer",
+          "Dana Whitfield. You took my internet payment twice. $84.50, twice, on the 3rd."
+        ],
+        [
+          "agent",
+          "I apologize for any inconvenience this may have caused. Let me look into that for you."
+        ],
+        [
+          "customer",
+          "My rent comes out Friday, so this is a real problem. And I didn't get an email about the payment either."
+        ],
+        [
+          "agent",
+          "I understand your frustration. Just so I'm clear, there are two charges of $84.50 on the 3rd, for the same bill?"
+        ],
+        [
+          "customer",
+          "Yes, exactly."
+        ],
+        [
+          "agent",
+          "I see both charges. I'm going to refund the second one right now."
+        ],
+        [
+          "customer",
+          "When will I have it back?"
+        ],
+        [
+          "agent",
+          "The refund takes 3 to 5 business days to reach your bank account. I've submitted it, so you don't need to do anything else."
+        ],
+        [
+          "customer",
+          "Fine."
+        ],
+        [
+          "agent",
+          "So to recap, I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days. Is there anything else I can help you with?"
+        ],
+        [
+          "customer",
+          "No."
+        ],
+        [
+          "agent",
+          "Thank you for calling Northline Internet. Have a great day."
+        ]
+      ]
+    },
+    {
+      "id": "A4",
+      "scenario": "A",
+      "learner": "Dev",
+      "key": {
+        "empathy": 3,
+        "listening": 2,
+        "ownership": 3,
+        "resolution": 3,
+        "close": 2
+      },
+      "keyNotes": {
+        "empathy": "\"A double charge right at the start of the month is a pain\" (3).",
+        "listening": "Asks for the account digits (5) but never plays the problem back.",
+        "ownership": "\"I'm going to refund the second one now\" (7), \"I've already sent it through\" (9).",
+        "resolution": "Refund with a time frame (9).",
+        "close": "\"Anything else I can do for you?\" (11) with no recap."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline, Dev speaking. Can I get your name?"
+        ],
+        [
+          "customer",
+          "Dana Whitfield. You charged me twice for internet this month. $84.50, two times, on the 3rd."
+        ],
+        [
+          "agent",
+          "Oh no, Dana. A double charge right at the start of the month is a pain. I'm sorry."
+        ],
+        [
+          "customer",
+          "Yeah, my rent's due Friday. And I didn't get any email about the payment."
+        ],
+        [
+          "agent",
+          "Can you give me the last four digits of the bank account it came out of?"
+        ],
+        [
+          "customer",
+          "It ends in 2291."
+        ],
+        [
+          "agent",
+          "Thanks. I can see both charges. I'm going to refund the second one now."
+        ],
+        [
+          "customer",
+          "How long does that take?"
+        ],
+        [
+          "agent",
+          "You'll get it back in 3 to 5 business days. I've already sent it through."
+        ],
+        [
+          "customer",
+          "Okay."
+        ],
+        [
+          "agent",
+          "Anything else I can do for you?"
+        ],
+        [
+          "customer",
+          "No."
+        ],
+        [
+          "agent",
+          "Alright, thanks for calling. Take care."
+        ]
+      ]
+    },
+    {
+      "id": "A5",
+      "scenario": "A",
+      "learner": "Elena",
+      "key": {
+        "empathy": 1,
+        "listening": 1,
+        "ownership": 1,
+        "resolution": 2,
+        "close": 1
+      },
+      "keyNotes": {
+        "empathy": "No acknowledgement at all, and \"There's nothing I can do about the timing\" (11).",
+        "listening": "Asks for her name (3) and the problem (5) after she gave both.",
+        "ownership": "Blames the bank (7).",
+        "resolution": "Offers a refund, but \"at some point\" (9).",
+        "close": "\"Okay. Bye.\" (13). No recap, no check."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline."
+        ],
+        [
+          "customer",
+          "Hi, this is Dana Whitfield. You took my internet payment twice this month. $84.50, twice, on the 3rd."
+        ],
+        [
+          "agent",
+          "Okay. What's your name?"
+        ],
+        [
+          "customer",
+          "Dana Whitfield. I just said that."
+        ],
+        [
+          "agent",
+          "And what's the problem?"
+        ],
+        [
+          "customer",
+          "I was charged twice! $84.50, two times."
+        ],
+        [
+          "agent",
+          "Double charges usually come from the bank's side, not ours."
+        ],
+        [
+          "customer",
+          "It's your company that took the money. My rent is due Friday."
+        ],
+        [
+          "agent",
+          "I can request a refund for the second charge. It'll come back at some point."
+        ],
+        [
+          "customer",
+          "At some point? I need it before Friday."
+        ],
+        [
+          "agent",
+          "There's nothing I can do about the timing."
+        ],
+        [
+          "customer",
+          "Fine."
+        ],
+        [
+          "agent",
+          "Okay. Bye."
+        ]
+      ]
+    },
+    {
+      "id": "A6",
+      "scenario": "A",
+      "learner": "Farid",
+      "key": {
+        "empathy": 3,
+        "listening": 3,
+        "ownership": 2,
+        "resolution": 3,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "\"Paying the same bill twice is frustrating\" (3).",
+        "listening": "\"Let me make sure I have it right\" and plays it back (5).",
+        "ownership": "Only passive words: \"should get refunded\" (7), \"a refund request has been put in\" (9). No \"I\" doing it.",
+        "resolution": "Refund with a time frame (9).",
+        "close": "Recap and an anything-else check (11)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline Internet, this is Farid. Who do I have on the line?"
+        ],
+        [
+          "customer",
+          "Dana Whitfield. You took my internet payment twice. $84.50 each time, on the 3rd."
+        ],
+        [
+          "agent",
+          "Thanks, Dana. Paying the same bill twice is frustrating. I'm sorry."
+        ],
+        [
+          "customer",
+          "My rent is due Friday, so yeah. And I didn't get an email about the payment."
+        ],
+        [
+          "agent",
+          "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+        ],
+        [
+          "customer",
+          "Exactly."
+        ],
+        [
+          "agent",
+          "Okay, I can see that. The duplicate should get refunded."
+        ],
+        [
+          "customer",
+          "Should? Is someone doing it?"
+        ],
+        [
+          "agent",
+          "A refund request has been put in for it. It should be back in your account in 3 to 5 business days."
+        ],
+        [
+          "customer",
+          "Okay."
+        ],
+        [
+          "agent",
+          "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?"
+        ],
+        [
+          "customer",
+          "No, thanks."
+        ],
+        [
+          "agent",
+          "Thanks for calling, Dana. Take care."
+        ]
+      ]
+    },
+    {
+      "id": "B1",
+      "scenario": "B",
+      "learner": "Grace",
+      "key": {
+        "empathy": 4,
+        "listening": 4,
+        "ownership": 4,
+        "resolution": 3,
+        "close": 4
+      },
+      "keyNotes": {
+        "empathy": "\"You gave up a day of work\" (3), then refers back to his waiting (11) and his lost day (15).",
+        "listening": "Plays it all back (5) and deals with the $50 fee he mentioned in passing (7).",
+        "ownership": "Books it herself (9) and adds a call-ahead note nobody asked for (11).",
+        "resolution": "New slot and the credit (9). Never checks tomorrow suits him, after he already took today off.",
+        "close": "Recap, a reference number and an anything-else check (13)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline Internet, Grace speaking. May I have your name?"
+        ],
+        [
+          "customer",
+          "Marcus Tan. I had an install booked from 8 to noon today. I took the day off work for it, and nobody showed up. It's 1:30."
+        ],
+        [
+          "agent",
+          "Marcus, I'm sorry. You gave up a day of work and waited all morning for nothing. Let me find out what happened."
+        ],
+        [
+          "customer",
+          "Thanks. Also, the confirmation text said there's a $50 install fee. The person who sold me the plan said install was free."
+        ],
+        [
+          "agent",
+          "So your install was booked for this morning, nobody came, and the text shows a $50 fee you were told you wouldn't pay. Is that right?"
+        ],
+        [
+          "customer",
+          "Yes."
+        ],
+        [
+          "agent",
+          "I checked, and install is free on your plan, so I've removed the $50 fee."
+        ],
+        [
+          "customer",
+          "Good. So what now?"
+        ],
+        [
+          "agent",
+          "I've booked you the first slot tomorrow, 8 to 10 am, and added a $25 credit to your account for today."
+        ],
+        [
+          "customer",
+          "Okay."
+        ],
+        [
+          "agent",
+          "I've also put a note on the job asking the technician to call you 30 minutes before they arrive, so you're not stuck waiting at the window again."
+        ],
+        [
+          "customer",
+          "I appreciate that."
+        ],
+        [
+          "agent",
+          "To recap: the $50 fee is gone, your install is tomorrow from 8 to 10 am, the technician will call 30 minutes ahead, and there's a $25 credit on your account. Your reference number is JB-55120. Is there anything else I can do?"
+        ],
+        [
+          "customer",
+          "No, that covers it."
+        ],
+        [
+          "agent",
+          "Thanks, Marcus. Sorry again about losing your day. Tomorrow should go a lot better."
+        ]
+      ]
+    },
+    {
+      "id": "B2",
+      "scenario": "B",
+      "learner": "Hugo",
+      "key": {
+        "empathy": 3,
+        "listening": 3,
+        "ownership": 3,
+        "resolution": 2,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "\"Taking a day off and having no one show up is really frustrating\" (3).",
+        "listening": "Plays the missed install back and checks (5). Lets the fee go.",
+        "ownership": "\"I'm going to get this rebooked for you right now\" (7).",
+        "resolution": "A rebooking with no date or time: \"soon\", \"they'll reach out\" (9).",
+        "close": "Recap and an anything-else check (11)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Thanks for calling Northline, this is Hugo. Can I get your name?"
+        ],
+        [
+          "customer",
+          "Marcus Tan. My install was booked for 8 to noon today. I took the day off and no one came. It's 1:30 now."
+        ],
+        [
+          "agent",
+          "I'm sorry, Marcus. Taking a day off and having no one show up is really frustrating."
+        ],
+        [
+          "customer",
+          "It is. The text also said something about a $50 install fee. I thought install was free."
+        ],
+        [
+          "agent",
+          "Let me confirm: your install was today between 8 and noon, and no technician arrived?"
+        ],
+        [
+          "customer",
+          "Right."
+        ],
+        [
+          "agent",
+          "I'm going to get this rebooked for you right now."
+        ],
+        [
+          "customer",
+          "For when?"
+        ],
+        [
+          "agent",
+          "I've put in a new booking. A technician will come out to you soon, and they'll reach out to confirm the time."
+        ],
+        [
+          "customer",
+          "Soon? Okay..."
+        ],
+        [
+          "agent",
+          "I've done that on my end, so you don't need to call back to book it. So to recap, I've rebooked your installation, and a technician will contact you to confirm the time. Is there anything else I can help with?"
+        ],
+        [
+          "customer",
+          "No."
+        ],
+        [
+          "agent",
+          "Thanks for your patience, Marcus. Have a good afternoon."
+        ]
+      ]
+    },
+    {
+      "id": "B3",
+      "scenario": "B",
+      "learner": "Ines",
+      "key": {
+        "empathy": 2,
+        "listening": 2,
+        "ownership": 3,
+        "resolution": 3,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "Only stock lines: \"I apologize for the inconvenience\" (3), \"I understand your frustration\" (5).",
+        "listening": "Asks for the account number (3) but never plays the problem back, and lets the fee go.",
+        "ownership": "\"I'm going to book you a new appointment\" (5), \"I've booked it\" (7).",
+        "resolution": "New slot with a date and time, and the credit (7).",
+        "close": "Recap and an anything-else check (9)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Thank you for calling Northline Internet, my name is Ines. Who am I speaking with?"
+        ],
+        [
+          "customer",
+          "Marcus Tan. I booked an install for 8 to noon today and took the day off work. Nobody came."
+        ],
+        [
+          "agent",
+          "I apologize for the inconvenience. Can I get your account number?"
+        ],
+        [
+          "customer",
+          "It's 7781-302. The text also said I'd pay a $50 install fee, which I wasn't told about."
+        ],
+        [
+          "agent",
+          "I understand your frustration. One moment while I pull that up. Okay, I'm going to book you a new appointment. The first one I have is tomorrow from 8 to 10 am."
+        ],
+        [
+          "customer",
+          "Fine."
+        ],
+        [
+          "agent",
+          "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+        ],
+        [
+          "customer",
+          "Okay."
+        ],
+        [
+          "agent",
+          "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?"
+        ],
+        [
+          "customer",
+          "No."
+        ],
+        [
+          "agent",
+          "Thank you for calling Northline Internet. Have a great day."
+        ]
+      ]
+    },
+    {
+      "id": "B4",
+      "scenario": "B",
+      "learner": "Jamal",
+      "key": {
+        "empathy": 3,
+        "listening": 3,
+        "ownership": 3,
+        "resolution": 3,
+        "close": 2
+      },
+      "keyNotes": {
+        "empathy": "\"Losing a day off work to a no-show is rough\" (3).",
+        "listening": "Plays the missed install back and checks (5). Lets the fee go.",
+        "ownership": "\"I'm booking you the first slot tomorrow\" (7).",
+        "resolution": "New slot with a date and time, and the credit (7).",
+        "close": "\"Anything else?\" (9) with no recap."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline Internet, Jamal here. Can I get your name?"
+        ],
+        [
+          "customer",
+          "Marcus Tan. I had an installation today, 8 to noon. I took the day off and nobody came. It's 1:30."
+        ],
+        [
+          "agent",
+          "Marcus, losing a day off work to a no-show is rough. I'm sorry."
+        ],
+        [
+          "customer",
+          "Yeah. The text also mentioned a $50 install fee, which I wasn't expecting."
+        ],
+        [
+          "agent",
+          "Okay, so your install was this morning, 8 to noon, and the technician never arrived. Right?"
+        ],
+        [
+          "customer",
+          "Right."
+        ],
+        [
+          "agent",
+          "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+        ],
+        [
+          "customer",
+          "Okay, tomorrow works."
+        ],
+        [
+          "agent",
+          "Great. Anything else?"
+        ],
+        [
+          "customer",
+          "No."
+        ],
+        [
+          "agent",
+          "Alright, thanks for calling. Bye now."
+        ]
+      ]
+    },
+    {
+      "id": "B5",
+      "scenario": "B",
+      "learner": "Kai",
+      "key": {
+        "empathy": 2,
+        "listening": 1,
+        "ownership": 1,
+        "resolution": 1,
+        "close": 1
+      },
+      "keyNotes": {
+        "empathy": "Only \"Sorry about that\" (3).",
+        "listening": "\"What's the issue exactly?\" (5) after Marcus already said.",
+        "ownership": "\"That's a dispatch problem\" and sends him to call dispatch (7).",
+        "resolution": "No fix, and wrong information: the agent can book (7, 9).",
+        "close": "\"Okay, have a good one\" (11). No recap, no check."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline."
+        ],
+        [
+          "customer",
+          "Hi, it's Marcus Tan. My install was booked for 8 to noon today and nobody showed up. I took the day off for this."
+        ],
+        [
+          "agent",
+          "Sorry about that."
+        ],
+        [
+          "customer",
+          "So what happens now?"
+        ],
+        [
+          "agent",
+          "What's the issue exactly?"
+        ],
+        [
+          "customer",
+          "The technician didn't come. I just told you."
+        ],
+        [
+          "agent",
+          "That's a dispatch problem. Customer service doesn't book technicians. You'll have to call dispatch."
+        ],
+        [
+          "customer",
+          "Can't you just rebook it?"
+        ],
+        [
+          "agent",
+          "Dispatch does bookings. Their number is on the website."
+        ],
+        [
+          "customer",
+          "Unbelievable."
+        ],
+        [
+          "agent",
+          "Okay, have a good one."
+        ]
+      ]
+    },
+    {
+      "id": "B6",
+      "scenario": "B",
+      "learner": "Lena",
+      "key": {
+        "empathy": 3,
+        "listening": 4,
+        "ownership": 3,
+        "resolution": 4,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "\"I'm sorry you lost a day off work waiting on us\" (3). She doesn't come back to it.",
+        "listening": "Plays both problems back (5) and removes the fee he mentioned (7).",
+        "ownership": "\"I've removed the $50 charge\" (7), \"I've booked Saturday\" (11).",
+        "resolution": "Offers tomorrow or Saturday and lets him choose (9).",
+        "close": "Recap and an anything-else check (13). No reference number."
+      },
+      "lines": [
+        [
+          "agent",
+          "Thanks for calling Northline, this is Lena. Can I get your name?"
+        ],
+        [
+          "customer",
+          "Marcus Tan. I booked an install for 8 to noon today and took the day off. Nobody came, and it's 1:30."
+        ],
+        [
+          "agent",
+          "Marcus, I'm sorry you lost a day off work waiting on us."
+        ],
+        [
+          "customer",
+          "Yeah. Also, the confirmation text says a $50 install fee? I was told install was free."
+        ],
+        [
+          "agent",
+          "So nobody came for this morning's install, and the text shows a $50 fee when you were told install was free. Did I get that right?"
+        ],
+        [
+          "customer",
+          "That's it."
+        ],
+        [
+          "agent",
+          "On the fee: install is free on your plan, and I've removed the $50 charge."
+        ],
+        [
+          "customer",
+          "Good."
+        ],
+        [
+          "agent",
+          "For the install, I have tomorrow from 8 to 10 am or Saturday from 9 to 11 am. Which works better for you?"
+        ],
+        [
+          "customer",
+          "Saturday would be way better."
+        ],
+        [
+          "agent",
+          "Done. I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+        ],
+        [
+          "customer",
+          "Perfect."
+        ],
+        [
+          "agent",
+          "To recap, the $50 fee is removed, your install is Saturday from 9 to 11 am, and there's a $25 credit on your account. Is there anything else I can help with?"
+        ],
+        [
+          "customer",
+          "Nope."
+        ],
+        [
+          "agent",
+          "Thanks, Marcus. Enjoy the rest of your afternoon."
+        ]
+      ]
+    },
+    {
+      "id": "C1",
+      "scenario": "C",
+      "learner": "Mina",
+      "holdout": true,
+      "key": {
+        "empathy": 3,
+        "listening": 3,
+        "ownership": 3,
+        "resolution": 3,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "\"A $25 jump with no warning is a nasty surprise\" (3). She doesn't come back to it.",
+        "listening": "Plays the jump back and checks (5). Lets the missing warning go.",
+        "ownership": "\"I'm putting you on our loyalty rate\" (7).",
+        "resolution": "The loyalty rate, with the price and when it starts (7). Never offers the cheaper plan or checks what Olivia needs.",
+        "close": "Recap and an anything-else check (9)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline Internet, this is Mina. Can I get your name?"
+        ],
+        [
+          "customer",
+          "Olivia Grant. My bill went from $65 to $90 this month and nobody told me why. Honestly, I'm thinking about switching."
+        ],
+        [
+          "agent",
+          "Thanks, Olivia. A $25 jump with no warning is a nasty surprise. Let me take a look."
+        ],
+        [
+          "customer",
+          "Please. And nobody even warned me something was ending."
+        ],
+        [
+          "agent",
+          "So your bill went from $65 to $90 this month, and you want to know why. Is that right?"
+        ],
+        [
+          "customer",
+          "Yes."
+        ],
+        [
+          "agent",
+          "Your 12-month promotion ended, so you went to the regular price. I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill."
+        ],
+        [
+          "customer",
+          "Okay, that's better."
+        ],
+        [
+          "agent",
+          "To recap, I've moved you to the loyalty rate of $75 a month for 12 months, and it starts on your next bill. Is there anything else I can help with?"
+        ],
+        [
+          "customer",
+          "No, that's it."
+        ],
+        [
+          "agent",
+          "Thanks for staying with us, Olivia. Have a good evening."
+        ]
+      ]
+    },
+    {
+      "id": "C2",
+      "scenario": "C",
+      "learner": "Noah",
+      "holdout": true,
+      "key": {
+        "empathy": 3,
+        "listening": 2,
+        "ownership": 2,
+        "resolution": 3,
+        "close": 3
+      },
+      "keyNotes": {
+        "empathy": "\"Paying $25 more out of nowhere is frustrating\" (3).",
+        "listening": "Asks for the account number (3) but never plays the problem back.",
+        "ownership": "Only passive words: \"the loyalty rate can be applied\" (5), \"that'll get changed\" (7). No \"I\" doing it.",
+        "resolution": "The loyalty rate, with the price and when it starts (7).",
+        "close": "Recap and an anything-else check (9)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline, Noah speaking. Who am I talking to?"
+        ],
+        [
+          "customer",
+          "Olivia Grant. My bill jumped from $65 to $90 and I don't know why. I might switch."
+        ],
+        [
+          "agent",
+          "Paying $25 more out of nowhere is frustrating, Olivia. Can I get your account number?"
+        ],
+        [
+          "customer",
+          "It's 5520-118. And no one warned me anything was ending."
+        ],
+        [
+          "agent",
+          "Okay. Your promotion ended last month. The loyalty rate can be applied to your account, which is $75 a month for 12 months."
+        ],
+        [
+          "customer",
+          "Fine, do that."
+        ],
+        [
+          "agent",
+          "Okay, that'll get changed, and it starts with your next bill."
+        ],
+        [
+          "customer",
+          "Alright."
+        ],
+        [
+          "agent",
+          "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?"
+        ],
+        [
+          "customer",
+          "No."
+        ],
+        [
+          "agent",
+          "Thanks for calling, Olivia."
+        ]
+      ]
+    },
+    {
+      "id": "C3",
+      "scenario": "C",
+      "learner": "Omar",
+      "holdout": true,
+      "key": {
+        "empathy": 2,
+        "listening": 3,
+        "ownership": 3,
+        "resolution": 4,
+        "close": 2
+      },
+      "keyNotes": {
+        "empathy": "Only stock lines: \"I'm sorry for any inconvenience\" (3) and \"I hear you\" (5).",
+        "listening": "Plays the jump back and checks (3). Lets the missing warning go.",
+        "ownership": "\"I'll set that up\" (7), \"I've moved you\" (9).",
+        "resolution": "Offers the loyalty rate or the cheaper plan and asks which fits (7).",
+        "close": "\"Anything else?\" (9) with no recap."
+      },
+      "lines": [
+        [
+          "agent",
+          "Thank you for calling Northline Internet, this is Omar. May I have your name?"
+        ],
+        [
+          "customer",
+          "Olivia Grant. My bill went from $65 to $90 and nobody told me why. I'm close to switching."
+        ],
+        [
+          "agent",
+          "I'm sorry for any inconvenience, Olivia. Just to check, your bill went from $65 last month to $90 this month?"
+        ],
+        [
+          "customer",
+          "Yes. And no one warned me something was ending."
+        ],
+        [
+          "agent",
+          "I hear you. Your 12-month promotion ended, so the price went to the regular rate."
+        ],
+        [
+          "customer",
+          "So what can you do?"
+        ],
+        [
+          "agent",
+          "I have two options. A loyalty rate of $75 a month for 12 months, or our slower plan at $60 a month. Both start on your next bill. Which fits how you use the internet? I'll set that up."
+        ],
+        [
+          "customer",
+          "I mostly stream at night, so I'd rather keep the speed. The $75 one."
+        ],
+        [
+          "agent",
+          "Done, I've moved you to the loyalty rate. Anything else?"
+        ],
+        [
+          "customer",
+          "No."
+        ],
+        [
+          "agent",
+          "Have a great day."
+        ]
+      ]
+    },
+    {
+      "id": "C4",
+      "scenario": "C",
+      "learner": "Priya",
+      "holdout": true,
+      "key": {
+        "empathy": 4,
+        "listening": 4,
+        "ownership": 3,
+        "resolution": 3,
+        "close": 4
+      },
+      "keyNotes": {
+        "empathy": "\"A $25 jump with no heads-up\" (3), and comes back to the surprise at the end (11).",
+        "listening": "Plays both back (5) and turns on the renewal reminders she was missing (7).",
+        "ownership": "\"I've moved you\" (7). The reminders answer her own complaint, so they count under Listening, not as an extra.",
+        "resolution": "The loyalty rate, with the price and when it starts (7). Never offers the cheaper plan or checks what she needs.",
+        "close": "Recap, a reference number and an anything-else check (9)."
+      },
+      "lines": [
+        [
+          "agent",
+          "Northline Internet, this is Priya. Who am I speaking with?"
+        ],
+        [
+          "customer",
+          "Olivia Grant. My bill went from $65 to $90 and nobody told me why. I'm thinking of switching."
+        ],
+        [
+          "agent",
+          "Thanks, Olivia. A $25 jump with no heads-up would make me want to leave too. Let me find out what happened."
+        ],
+        [
+          "customer",
+          "And nobody warned me anything was ending, which is what really bugs me."
+        ],
+        [
+          "agent",
+          "So two things: the bill went from $65 to $90, and nobody warned you it was coming. Is that right?"
+        ],
+        [
+          "customer",
+          "Exactly."
+        ],
+        [
+          "agent",
+          "Your 12-month promotion ended. I've moved you to our loyalty rate, $75 a month for the next 12 months, starting with your next bill. And I've turned on renewal reminders, so you'll get a message 30 days before any rate ends."
+        ],
+        [
+          "customer",
+          "Okay. That helps."
+        ],
+        [
+          "agent",
+          "To recap: you're on the loyalty rate at $75 a month for 12 months from your next bill, and renewal reminders are on. Your reference number is LR-30981. Is there anything else I can help with?"
+        ],
+        [
+          "customer",
+          "No, that's it."
+        ],
+        [
+          "agent",
+          "Thanks, Olivia. Sorry again it came as a surprise. You won't be caught off guard like that again."
+        ]
+      ]
+    }
+  ]
+}

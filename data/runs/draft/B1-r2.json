@@ -1,0 +1,59 @@
+{
+  "roleplay": "B1",
+  "rubric": "draft",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:46.090Z",
+  "durationMs": 6781,
+  "promptSha256": "e6f37e06cacea9fffa5b275ce6303b34e88a57aadf827fae97678d6f69e84a91",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, I'm sorry. You gave up a day of work and waited all morning for nothing.",
+        "so you're not stuck waiting at the window again",
+        "Sorry again about losing your day."
+      ],
+      "reason": "Agent named the specific impact (lost day of work, waiting) and apologized sincerely at the start, and echoed it later without sounding scripted.",
+      "level": 4
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your install was booked for this morning, nobody came, and the text shows a $50 fee you were told you wouldn't pay. Is that right?",
+        "so you're not stuck waiting at the window again"
+      ],
+      "reason": "Agent accurately paraphrased both issues, including the fee raised in passing, and confirmed understanding before acting.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Let me find out what happened.",
+        "I checked, and install is free on your plan, so I've removed the $50 fee.",
+        "I've booked you the first slot tomorrow, 8 to 10 am"
+      ],
+      "reason": "Agent took action on every issue herself without deflecting, and proactively handled the credit and the technician note.",
+      "level": 4
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've removed the $50 fee.",
+        "I've booked you the first slot tomorrow, 8 to 10 am, and added a $25 credit to your account for today.",
+        "I've also put a note on the job asking the technician to call you 30 minutes before they arrive"
+      ],
+      "reason": "Agent used all the available tools correctly (fee removal, earliest rebook, policy credit, call-ahead note), though she booked tomorrow without asking if Marcus could make it or offering Saturday.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap: the $50 fee is gone, your install is tomorrow from 8 to 10 am, the technician will call 30 minutes ahead, and there's a $25 credit on your account. Your reference number is JB-55120. Is there anything else I can do?",
+        "Thanks, Marcus. Sorry again about losing your day. Tomorrow should go a lot better."
+      ],
+      "reason": "Agent gave a complete recap, the reference number, checked for other needs, and ended warmly, though \"should go a lot better\" is a mild soft promise.",
+      "level": 4
+    }
+  ]
+}

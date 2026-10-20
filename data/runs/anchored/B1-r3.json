@@ -1,0 +1,57 @@
+{
+  "roleplay": "B1",
+  "rubric": "anchored",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:12.826Z",
+  "durationMs": 10431,
+  "promptSha256": "fb467725e2cb3f853a809850a5074ae59e7ff0b718f902b638dcc209fd9d9ec9",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, I'm sorry. You gave up a day of work and waited all morning for nothing.",
+        "so you're not stuck waiting at the window again",
+        "Sorry again about losing your day."
+      ],
+      "reason": "The agent named Marcus's lost day of work and morning of waiting, then referred back to that situation when shaping the fix and at the close.",
+      "level": 4
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your install was booked for this morning, nobody came, and the text shows a $50 fee you were told you wouldn't pay. Is that right?"
+      ],
+      "reason": "The agent played the problem back in their own words and checked it before fixing it, and also picked up the $50 fee Marcus raised as an \"Also\" and dealt with it.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I checked, and install is free on your plan, so I've removed the $50 fee.",
+        "I've booked you the first slot tomorrow, 8 to 10 am",
+        "I've also put a note on the job asking the technician to call you 30 minutes before they arrive"
+      ],
+      "reason": "The agent used first-person action throughout and, unasked, added the technician call-ahead note to stop a repeat of the problem.",
+      "level": 4
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've removed the $50 fee.",
+        "I've booked you the first slot tomorrow, 8 to 10 am, and added a $25 credit to your account for today."
+      ],
+      "reason": "The agent gave the right fixes with a date, time and amount, but never checked that tomorrow morning works for Marcus, who took today off work, and never offered the Saturday slot as a choice.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap: the $50 fee is gone, your install is tomorrow from 8 to 10 am, the technician will call 30 minutes ahead, and there's a $25 credit on your account.",
+        "Your reference number is JB-55120. Is there anything else I can do?"
+      ],
+      "reason": "The agent recapped what was done and what happens next, gave a reference number, and checked whether anything else was needed.",
+      "level": 4
+    }
+  ]
+}

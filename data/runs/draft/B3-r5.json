@@ -1,0 +1,55 @@
+{
+  "roleplay": "B3",
+  "rubric": "draft",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:09:22.194Z",
+  "durationMs": 6290,
+  "promptSha256": "d5aa8c91c5d18e3b975d073d1dbe0d4a8d021fa3b863c6476397f86bbc91eb8c",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for the inconvenience.",
+        "I understand your frustration."
+      ],
+      "reason": "Both statements are generic and scripted, and neither acknowledges that Marcus took the day off work or waited for nothing.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "I'm going to book you a new appointment."
+      ],
+      "reason": "The agent ignored Marcus's $50 install fee concern and never confirmed his availability, so key details he raised went unaddressed.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to book you a new appointment.",
+        "I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent acted on the missed appointment without being pushed, but never took ownership of the fee complaint or gave a reference number.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent rebooked and applied the policy credit, but left the $50 fee unaddressed even though install is free, and did not offer the Saturday option, a technician call-ahead note or a reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?",
+        "Thank you for calling Northline Internet. Have a great day."
+      ],
+      "reason": "The recap and polite sign-off were professional, but the agent closed with the fee issue unresolved, no reference number and no next-step assurance.",
+      "level": 3
+    }
+  ]
+}

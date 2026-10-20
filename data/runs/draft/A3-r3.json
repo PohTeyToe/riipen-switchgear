@@ -1,0 +1,54 @@
+{
+  "roleplay": "A3",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:05.847Z",
+  "durationMs": 6021,
+  "promptSha256": "e048ac47519713e2991950087e917c6d720d3fbf674f9368f3dd21aac660a3fd",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for any inconvenience this may have caused.",
+        "I understand your frustration."
+      ],
+      "reason": "The agent used generic scripted empathy and never acknowledged the specific rent-on-Friday worry Dana raised.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just so I'm clear, there are two charges of $84.50 on the 3rd, for the same bill?"
+      ],
+      "reason": "The agent confirmed the duplicate charge but ignored the Friday rent deadline and the missing email, both of which Dana raised.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one right now.",
+        "I've submitted it, so you don't need to do anything else."
+      ],
+      "reason": "The agent took action on the refund straight away, but only handled the surface issue and did not own the full problem (timing, email).",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund takes 3 to 5 business days to reach your bank account."
+      ],
+      "reason": "The agent did not mark the refund urgent (about 2 business days, which fits Friday rent), did not fix the email typo (gmial.com), did not add an account note against another duplicate charge, and gave no reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So to recap, I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days. Is there anything else I can help you with?",
+        "Thank you for calling Northline Internet. Have a great day."
+      ],
+      "reason": "The close was polite and included a recap and an offer of more help, but the recap was incomplete, it gave no reference number, and it did not check that Dana was satisfied with the timing.",
+      "level": 2
+    }
+  ]
+}

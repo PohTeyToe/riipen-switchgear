@@ -1,0 +1,53 @@
+{
+  "roleplay": "A6",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:02.499Z",
+  "durationMs": 6526,
+  "promptSha256": "40fd3c8608b56de266ec18126c668988f4d6ca1427def2619684cfa2c29d84a3",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying the same bill twice is frustrating. I'm sorry."
+      ],
+      "reason": "The agent names the double payment specific to this call, but never refers back to it later (e.g., the rent due Friday).",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+      ],
+      "reason": "The agent plays the problem back and checks it, but ignores the missed-email concern and the rent deadline mentioned in passing.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "A refund request has been put in for it.",
+        "The duplicate should get refunded."
+      ],
+      "reason": "Actions are described only in passive or hedged wording with no 'I' doing anything.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "It should be back in your account in 3 to 5 business days.",
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days."
+      ],
+      "reason": "A refund with an amount and time frame is given, but 3 to 5 days may miss the Friday rent and the urgent option was not used or offered, so the fix does not fit her situation. The email typo was also not fixed.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?"
+      ],
+      "reason": "The agent recaps the refund and what happens next and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

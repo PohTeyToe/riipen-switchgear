@@ -1,0 +1,55 @@
+{
+  "roleplay": "C3",
+  "rubric": "revised",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:28.655Z",
+  "durationMs": 12311,
+  "promptSha256": "d95d84860afba3a4a8ade1b6f83ed3c9ae7be1330547b426cda55002769f44fc",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry for any inconvenience, Olivia.",
+        "I hear you."
+      ],
+      "reason": "Both lines are stock phrases that would fit any call and say nothing specific about Olivia's price jump or the missing warning.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to check, your bill went from $65 last month to $90 this month?",
+        "Which fits how you use the internet?"
+      ],
+      "reason": "The agent confirmed the bill figures and asked a detail the fix needed, but never played back the full problem (no warning, thinking of switching) in their own words.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'll set that up.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done within the call, but does nothing extra such as turning on renewal reminders.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A loyalty rate of $75 a month for 12 months, or our slower plan at $60 a month. Both start on your next bill. Which fits how you use the internet?"
+      ],
+      "reason": "The agent gave a fix with amount, duration and start date, and offered a choice tied to the customer's usage, which let Olivia keep her speed for night streaming.",
+      "level": 4
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Done, I've moved you to the loyalty rate. Anything else?",
+        "Have a great day."
+      ],
+      "reason": "The agent checked whether anything else was needed but gave no recap of the rate, the start date or next steps, and no reference number.",
+      "level": 2
+    }
+  ]
+}

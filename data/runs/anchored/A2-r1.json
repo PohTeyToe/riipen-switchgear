@@ -1,0 +1,52 @@
+{
+  "roleplay": "A2",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:06:54.299Z",
+  "durationMs": 20216,
+  "promptSha256": "7eac08a313d950e4fac21699bd264669353f1dc50ce38248ed9eb76d669e4f42",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Being charged twice for the same bill is frustrating, and I'm sorry that happened."
+      ],
+      "reason": "The agent names the double charge this customer experienced, but never refers back to her situation (rent on Friday) later in the call.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to confirm, you're seeing two payments of $84.50 on the 3rd, both for this month's bill?"
+      ],
+      "reason": "The agent plays the problem back and checks it before fixing, but ignores the passing mention of the missing email, so there's no level 4.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm refunding the second payment now.",
+        "I've processed it on my end, so there's nothing you need to do."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but takes no extra step to prevent a repeat or save a future step.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund will reach your bank in 3 to 5 business days. It'll show up as a credit from Northline."
+      ],
+      "reason": "The agent refunds the duplicate and gives the amount and time frame, but doesn't check it against the rent due Friday or offer the urgent option.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days. Is there anything else I can help you with today?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or way back if the refund doesn't arrive.",
+      "level": 3
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "skills": [
+    {
+      "id": "empathy",
+      "name": "Empathy"
+    },
+    {
+      "id": "listening",
+      "name": "Listening"
+    },
+    {
+      "id": "ownership",
+      "name": "Ownership"
+    },
+    {
+      "id": "resolution",
+      "name": "Resolution"
+    },
+    {
+      "id": "close",
+      "name": "Close"
+    }
+  ],
+  "certification": "Certified when every skill scores 3 or higher.",
+  "rubrics": [
+    {
+      "id": "draft",
+      "name": "Draft rubric",
+      "short": "One question per skill, levels named Poor to Excellent.",
+      "levels": [
+        "Poor",
+        "Fair",
+        "Good",
+        "Excellent"
+      ],
+      "rules": [
+        "For each skill, quote the learner's words that support your score and give a one-sentence reason."
+      ],
+      "criteria": {
+        "empathy": {
+          "question": "Did the learner show empathy and understanding toward the customer?"
+        },
+        "listening": {
+          "question": "Did the learner listen actively to the customer?"
+        },
+        "ownership": {
+          "question": "Did the learner take ownership of the customer's issue?"
+        },
+        "resolution": {
+          "question": "Did the learner resolve the issue effectively?"
+        },
+        "close": {
+          "question": "Did the learner close the call professionally?"
+        }
+      }
+    },
+    {
+      "id": "anchored",
+      "name": "Anchored rubric",
+      "short": "Each level says what it sounds like, plus five scoring rules.",
+      "levels": [
+        "Not yet",
+        "Developing",
+        "Proficient",
+        "Advanced"
+      ],
+      "rules": [
+        "Score only what the learner (the agent) says. The customer's lines are context.",
+        "A level counts only if the transcript shows it. Each level includes everything in the levels below it.",
+        "If any Not yet behaviour appears, the skill is 1, whatever else the learner did.",
+        "If you are torn between two levels, choose the lower one.",
+        "Quote the learner's words exactly as written. Do not paraphrase inside a quote. If you cannot quote it, do not give credit for it."
+      ],
+      "criteria": {
+        "empathy": {
+          "question": "Does the learner acknowledge what happened to this customer?",
+          "anchors": [
+            "No acknowledgement of what happened to the customer, or words that brush it off.",
+            "Only a stock line that would fit any call, such as a general apology or a general \"I understand\". Nothing about this customer's situation.",
+            "Names what happened to this customer, or how it affects them, in words that fit only this call.",
+            "Proficient, and later in the call refers back to the customer's situation in words, for example when shaping the fix or at the end."
+          ]
+        },
+        "listening": {
+          "question": "Does the learner show they understood the problem before fixing it?",
+          "anchors": [
+            "Makes the customer repeat something they already said, or answers a different question.",
+            "Asks for details the fix needs, but never plays the problem back to the customer.",
+            "Plays the problem back in their own words and checks it is right before fixing it.",
+            "Proficient, and picks up a second concern the customer mentioned in passing and deals with it."
+          ]
+        },
+        "ownership": {
+          "question": "Does the learner take the problem on themselves?",
+          "anchors": [
+            "Blames another team, the customer or the bank, or sends the customer somewhere else instead of acting.",
+            "Action happens, but only in passive or hedged words with no \"I\" doing it.",
+            "Says in the first person what they are doing or have done to fix it, within the call.",
+            "Proficient, and without being asked does something extra that stops the problem coming back or saves the customer a future step."
+          ]
+        },
+        "resolution": {
+          "question": "Does the learner fix the problem and say what happens next?",
+          "anchors": [
+            "No fix, or wrong information.",
+            "A fix, but no clear what or when: no date, time frame or amount.",
+            "The right fix, and says what will happen and by when.",
+            "Proficient, and checks the fix works for the customer's situation, or offers a choice that fits it."
+          ]
+        },
+        "close": {
+          "question": "Does the learner close the call so the customer knows where things stand?",
+          "anchors": [
+            "Ends without a recap and without checking whether the customer needs anything else.",
+            "Checks whether the customer needs anything else, but gives no recap of what was done.",
+            "Recaps what was done and what happens next, and checks whether anything else is needed.",
+            "Proficient, and gives a reference number or a named way back if the fix does not happen."
+          ]
+        }
+      }
+    },
+    {
+      "id": "revised",
+      "name": "Revised rubric",
+      "short": "The anchored rubric after one round of review: one rule added, one anchor reworded.",
+      "levels": [
+        "Not yet",
+        "Developing",
+        "Proficient",
+        "Advanced"
+      ],
+      "rules": [
+        "Score only what the learner (the agent) says. The customer's lines are context.",
+        "A level counts only if the transcript shows it. Each level includes everything in the levels below it.",
+        "If any Not yet behaviour appears, the skill is 1, whatever else the learner did.",
+        "If you are torn between two levels, choose the lower one.",
+        "Count each behaviour under one skill only. A second concern the customer mentions in passing belongs to Listening. Shaping the fix around the customer's situation belongs to Resolution level 4, not level 3.",
+        "Quote the learner's words exactly as written. Do not paraphrase inside a quote. If you cannot quote it, do not give credit for it."
+      ],
+      "criteria": {
+        "empathy": {
+          "question": "Does the learner acknowledge what happened to this customer?",
+          "anchors": [
+            "No acknowledgement of what happened to the customer, or words that brush it off.",
+            "Only a stock line that would fit any call, such as a general apology or a general \"I understand\". Nothing about this customer's situation.",
+            "Names what happened to this customer, or how it affects them, in words that fit only this call.",
+            "Proficient, and later in the call refers back to the customer's situation in words, for example when shaping the fix or at the end."
+          ]
+        },
+        "listening": {
+          "question": "Does the learner show they understood the problem before fixing it?",
+          "anchors": [
+            "Makes the customer repeat something they already said, or answers a different question.",
+            "Asks for details the fix needs, but never plays the problem back to the customer.",
+            "Plays the problem back in their own words and checks it is right before fixing it.",
+            "Proficient, and picks up a second concern the customer mentioned in passing and deals with it."
+          ]
+        },
+        "ownership": {
+          "question": "Does the learner take the problem on themselves?",
+          "anchors": [
+            "Blames another team, the customer or the bank, or sends the customer somewhere else instead of acting.",
+            "Action happens, but only in passive or hedged words with no \"I\" doing it.",
+            "Says in the first person what they are doing or have done to fix it, within the call.",
+            "Proficient, and without being asked does something extra that stops the problem coming back or saves the customer a future step."
+          ]
+        },
+        "resolution": {
+          "question": "Does the learner fix the problem and say what happens next?",
+          "anchors": [
+            "No fix, or wrong information.",
+            "A fix, but no clear what or when: no date, time frame or amount.",
+            "Fixes the problem the customer called about, and says what will happen and by when. It does not have to be the best option on offer to count.",
+            "Proficient, and checks the fix works for the customer's situation, or offers a choice that fits it."
+          ]
+        },
+        "close": {
+          "question": "Does the learner close the call so the customer knows where things stand?",
+          "anchors": [
+            "Ends without a recap and without checking whether the customer needs anything else.",
+            "Checks whether the customer needs anything else, but gives no recap of what was done.",
+            "Recaps what was done and what happens next, and checks whether anything else is needed.",
+            "Proficient, and gives a reference number or a named way back if the fix does not happen."
+          ]
+        }
+      },
+      "changes": [
+        {
+          "where": "rules",
+          "text": "Added: count each behaviour under one skill only."
+        },
+        {
+          "where": "resolution",
+          "text": "Level 3 reworded: fixing the main problem counts, even if a better option existed."
+        }
+      ]
+    }
+  ]
+}

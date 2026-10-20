@@ -1,0 +1,52 @@
+{
+  "roleplay": "B4",
+  "rubric": "anchored",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:51.137Z",
+  "durationMs": 9149,
+  "promptSha256": "ea2fc613feb9b216efd473bf34fd57cd8585bdabad728fb78ce929ee9b5f444e",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, losing a day off work to a no-show is rough. I'm sorry."
+      ],
+      "reason": "The agent names the lost day off and the no-show, which fits only this call, but never refers back to it later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Okay, so your install was this morning, 8 to noon, and the technician never arrived. Right?"
+      ],
+      "reason": "The agent plays the problem back and checks it, but ignores the $50 install fee the customer mentioned in passing, so level 4 is not reached.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "The agent uses first-person action for the fix, but does nothing extra to prevent a repeat, such as a technician call-ahead note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "The rebooking and credit are clear with a time and amount, but the agent never addresses or removes the $50 fee that does not apply, so the fix is incomplete and, being torn, I choose the lower level.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Great. Anything else?",
+        "Alright, thanks for calling. Bye now."
+      ],
+      "reason": "The agent checks whether anything else is needed but gives no recap and no reference number.",
+      "level": 2
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "roleplay": "B4",
+  "rubric": "anchored",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:50.572Z",
+  "durationMs": 8214,
+  "promptSha256": "ea2fc613feb9b216efd473bf34fd57cd8585bdabad728fb78ce929ee9b5f444e",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, losing a day off work to a no-show is rough. I'm sorry."
+      ],
+      "reason": "The agent names the lost day off and the no-show, which fits only this call, but never refers back to it later, so it is not Advanced.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Okay, so your install was this morning, 8 to noon, and the technician never arrived. Right?"
+      ],
+      "reason": "The agent restates the problem in their own words and checks it before fixing, but ignores the $50 install fee the customer raised in passing, so it is not Advanced.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am,",
+        "I've added a $25 credit for today."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but adds no extra step to prevent a repeat, such as the technician call-ahead note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "The agent gives the right fix with a clear time and amount, but offers no choice such as Saturday, does not check that the slot fits the customer's situation, and leaves the $50 fee unaddressed.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Great. Anything else?",
+        "Alright, thanks for calling. Bye now."
+      ],
+      "reason": "The agent checks whether anything else is needed but gives no recap and no reference number.",
+      "level": 2
+    }
+  ]
+}

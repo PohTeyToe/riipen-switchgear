@@ -1,0 +1,2945 @@
+{
+  "model": "claude-sonnet-5-5",
+  "firstRun": "2026-10-20T08:06:36.522Z",
+  "lastRun": "2026-10-20T08:15:54.442Z",
+  "calls": 240,
+  "summaries": {
+    "tuning": {
+      "draft": {
+        "rubric": "draft",
+        "runsPerRolePlay": 5,
+        "scores": 300,
+        "exact": 168,
+        "withinOne": 285,
+        "kappa": 0.72,
+        "bias": -0.48,
+        "items": 60,
+        "unanimous": 48,
+        "learners": 12,
+        "certFlips": 0,
+        "learnerRuns": 60,
+        "certWrong": 5,
+        "falseCert": 0,
+        "missedCert": 5,
+        "quotes": {
+          "agent": 563,
+          "customer": 0,
+          "missing": 0
+        },
+        "bySkill": [
+          {
+            "skill": "empathy",
+            "exact": 54,
+            "unanimous": 11,
+            "items": 12,
+            "bias": -0.1
+          },
+          {
+            "skill": "listening",
+            "exact": 25,
+            "unanimous": 12,
+            "items": 12,
+            "bias": -0.58
+          },
+          {
+            "skill": "ownership",
+            "exact": 34,
+            "unanimous": 6,
+            "items": 12,
+            "bias": -0.43
+          },
+          {
+            "skill": "resolution",
+            "exact": 13,
+            "unanimous": 9,
+            "items": 12,
+            "bias": -0.97
+          },
+          {
+            "skill": "close",
+            "exact": 42,
+            "unanimous": 10,
+            "items": 12,
+            "bias": -0.3
+          }
+        ]
+      },
+      "anchored": {
+        "rubric": "anchored",
+        "runsPerRolePlay": 5,
+        "scores": 300,
+        "exact": 275,
+        "withinOne": 300,
+        "kappa": 0.952,
+        "bias": -0.08,
+        "items": 60,
+        "unanimous": 54,
+        "learners": 12,
+        "certFlips": 0,
+        "learnerRuns": 60,
+        "certWrong": 0,
+        "falseCert": 0,
+        "missedCert": 0,
+        "quotes": {
+          "agent": 478,
+          "customer": 0,
+          "missing": 0
+        },
+        "bySkill": [
+          {
+            "skill": "empathy",
+            "exact": 55,
+            "unanimous": 12,
+            "items": 12,
+            "bias": -0.08
+          },
+          {
+            "skill": "listening",
+            "exact": 60,
+            "unanimous": 12,
+            "items": 12,
+            "bias": 0
+          },
+          {
+            "skill": "ownership",
+            "exact": 60,
+            "unanimous": 12,
+            "items": 12,
+            "bias": 0
+          },
+          {
+            "skill": "resolution",
+            "exact": 40,
+            "unanimous": 6,
+            "items": 12,
+            "bias": -0.33
+          },
+          {
+            "skill": "close",
+            "exact": 60,
+            "unanimous": 12,
+            "items": 12,
+            "bias": 0
+          }
+        ]
+      },
+      "revised": {
+        "rubric": "revised",
+        "runsPerRolePlay": 5,
+        "scores": 300,
+        "exact": 287,
+        "withinOne": 300,
+        "kappa": 0.975,
+        "bias": -0.04,
+        "items": 60,
+        "unanimous": 57,
+        "learners": 12,
+        "certFlips": 0,
+        "learnerRuns": 60,
+        "certWrong": 0,
+        "falseCert": 0,
+        "missedCert": 0,
+        "quotes": {
+          "agent": 481,
+          "customer": 0,
+          "missing": 0
+        },
+        "bySkill": [
+          {
+            "skill": "empathy",
+            "exact": 56,
+            "unanimous": 11,
+            "items": 12,
+            "bias": -0.07
+          },
+          {
+            "skill": "listening",
+            "exact": 60,
+            "unanimous": 12,
+            "items": 12,
+            "bias": 0
+          },
+          {
+            "skill": "ownership",
+            "exact": 60,
+            "unanimous": 12,
+            "items": 12,
+            "bias": 0
+          },
+          {
+            "skill": "resolution",
+            "exact": 51,
+            "unanimous": 10,
+            "items": 12,
+            "bias": -0.15
+          },
+          {
+            "skill": "close",
+            "exact": 60,
+            "unanimous": 12,
+            "items": 12,
+            "bias": 0
+          }
+        ]
+      }
+    },
+    "holdout": {
+      "draft": {
+        "rubric": "draft",
+        "runsPerRolePlay": 5,
+        "scores": 100,
+        "exact": 66,
+        "withinOne": 100,
+        "kappa": 0.679,
+        "bias": -0.34,
+        "items": 20,
+        "unanimous": 17,
+        "learners": 4,
+        "certFlips": 0,
+        "learnerRuns": 20,
+        "certWrong": 5,
+        "falseCert": 0,
+        "missedCert": 5,
+        "quotes": {
+          "agent": 188,
+          "customer": 0,
+          "missing": 0
+        },
+        "bySkill": [
+          {
+            "skill": "empathy",
+            "exact": 16,
+            "unanimous": 3,
+            "items": 4,
+            "bias": -0.2
+          },
+          {
+            "skill": "listening",
+            "exact": 19,
+            "unanimous": 3,
+            "items": 4,
+            "bias": -0.05
+          },
+          {
+            "skill": "ownership",
+            "exact": 15,
+            "unanimous": 4,
+            "items": 4,
+            "bias": -0.25
+          },
+          {
+            "skill": "resolution",
+            "exact": 5,
+            "unanimous": 4,
+            "items": 4,
+            "bias": -0.75
+          },
+          {
+            "skill": "close",
+            "exact": 11,
+            "unanimous": 3,
+            "items": 4,
+            "bias": -0.45
+          }
+        ]
+      },
+      "anchored": {
+        "rubric": "anchored",
+        "runsPerRolePlay": 5,
+        "scores": 100,
+        "exact": 89,
+        "withinOne": 100,
+        "kappa": 0.864,
+        "bias": -0.01,
+        "items": 20,
+        "unanimous": 19,
+        "learners": 4,
+        "certFlips": 0,
+        "learnerRuns": 20,
+        "certWrong": 0,
+        "falseCert": 0,
+        "missedCert": 0,
+        "quotes": {
+          "agent": 151,
+          "customer": 0,
+          "missing": 0
+        },
+        "bySkill": [
+          {
+            "skill": "empathy",
+            "exact": 20,
+            "unanimous": 4,
+            "items": 4,
+            "bias": 0
+          },
+          {
+            "skill": "listening",
+            "exact": 14,
+            "unanimous": 3,
+            "items": 4,
+            "bias": -0.3
+          },
+          {
+            "skill": "ownership",
+            "exact": 15,
+            "unanimous": 4,
+            "items": 4,
+            "bias": 0.25
+          },
+          {
+            "skill": "resolution",
+            "exact": 20,
+            "unanimous": 4,
+            "items": 4,
+            "bias": 0
+          },
+          {
+            "skill": "close",
+            "exact": 20,
+            "unanimous": 4,
+            "items": 4,
+            "bias": 0
+          }
+        ]
+      },
+      "revised": {
+        "rubric": "revised",
+        "runsPerRolePlay": 5,
+        "scores": 100,
+        "exact": 90,
+        "withinOne": 100,
+        "kappa": 0.875,
+        "bias": -0.02,
+        "items": 20,
+        "unanimous": 18,
+        "learners": 4,
+        "certFlips": 0,
+        "learnerRuns": 20,
+        "certWrong": 0,
+        "falseCert": 0,
+        "missedCert": 0,
+        "quotes": {
+          "agent": 158,
+          "customer": 0,
+          "missing": 0
+        },
+        "bySkill": [
+          {
+            "skill": "empathy",
+            "exact": 20,
+            "unanimous": 4,
+            "items": 4,
+            "bias": 0
+          },
+          {
+            "skill": "listening",
+            "exact": 14,
+            "unanimous": 3,
+            "items": 4,
+            "bias": -0.3
+          },
+          {
+            "skill": "ownership",
+            "exact": 16,
+            "unanimous": 3,
+            "items": 4,
+            "bias": 0.2
+          },
+          {
+            "skill": "resolution",
+            "exact": 20,
+            "unanimous": 4,
+            "items": 4,
+            "bias": 0
+          },
+          {
+            "skill": "close",
+            "exact": 20,
+            "unanimous": 4,
+            "items": 4,
+            "bias": 0
+          }
+        ]
+      }
+    }
+  },
+  "learners": {
+    "A1": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            4,
+            3,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            4,
+            4,
+            4,
+            4,
+            3
+          ],
+          "resolution": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 4,
+          "ownership": 4,
+          "resolution": 4,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "resolution": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 4,
+          "ownership": 4,
+          "resolution": 4,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "resolution": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 4,
+          "ownership": 4,
+          "resolution": 4,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "A2": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          "resolution": [
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 2,
+          "resolution": 1,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "A3": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 2,
+          "ownership": 2,
+          "resolution": 1,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            2,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "A4": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 1,
+          "ownership": 2,
+          "resolution": 2,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "A5": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 1,
+          "listening": 1,
+          "ownership": 1,
+          "resolution": 1,
+          "close": 1
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 1,
+          "listening": 1,
+          "ownership": 1,
+          "resolution": 1,
+          "close": 1
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 1,
+          "listening": 1,
+          "ownership": 1,
+          "resolution": 1,
+          "close": 1
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "A6": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            2,
+            2,
+            1,
+            2,
+            2
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 2,
+          "resolution": 1,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            2,
+            3,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 2,
+          "resolution": 2,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 2,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "B1": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            3,
+            4,
+            3,
+            4,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            4,
+            3,
+            4
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 4,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 4,
+          "ownership": 4,
+          "resolution": 3,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 4,
+          "ownership": 4,
+          "resolution": 3,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "B2": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 3,
+          "resolution": 1,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 2,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 2,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "B3": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 1,
+          "ownership": 2,
+          "resolution": 2,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            2,
+            2,
+            3,
+            2,
+            2
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 2,
+          "ownership": 3,
+          "resolution": 2,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            2,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 2,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "B4": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            3,
+            2,
+            3,
+            3,
+            2
+          ],
+          "resolution": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 3,
+          "resolution": 2,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            2,
+            2,
+            2,
+            3,
+            2
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 2,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "B5": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 1,
+          "listening": 1,
+          "ownership": 1,
+          "resolution": 1,
+          "close": 1
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 1,
+          "listening": 1,
+          "ownership": 1,
+          "resolution": 1,
+          "close": 1
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "listening": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "ownership": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "resolution": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "close": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 1,
+          "listening": 1,
+          "ownership": 1,
+          "resolution": 1,
+          "close": 1
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "B6": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 4,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            4,
+            4,
+            4,
+            3,
+            4
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 4,
+          "ownership": 3,
+          "resolution": 4,
+          "close": 3
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            4,
+            3,
+            4
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 4,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "C1": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            2,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 2,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "C2": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "close": [
+            3,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 2,
+          "resolution": 2,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 2,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 2,
+          "ownership": 2,
+          "resolution": 3,
+          "close": 3
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "C3": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 3,
+          "ownership": 2,
+          "resolution": 3,
+          "close": 1
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            3,
+            2,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 4,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "listening": [
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "close": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "modal": {
+          "empathy": 2,
+          "listening": 3,
+          "ownership": 3,
+          "resolution": 4,
+          "close": 2
+        },
+        "certs": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "C4": {
+      "draft": {
+        "levels": {
+          "empathy": [
+            4,
+            3,
+            3,
+            3,
+            3
+          ],
+          "listening": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "ownership": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 3,
+          "listening": 4,
+          "ownership": 3,
+          "resolution": 3,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "anchored": {
+        "levels": {
+          "empathy": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 3,
+          "ownership": 4,
+          "resolution": 3,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "revised": {
+        "levels": {
+          "empathy": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "listening": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "ownership": [
+            4,
+            4,
+            4,
+            4,
+            3
+          ],
+          "resolution": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "close": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "modal": {
+          "empathy": 4,
+          "listening": 3,
+          "ownership": 4,
+          "resolution": 3,
+          "close": 4
+        },
+        "certs": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    }
+  },
+  "featured": "A2"
+}

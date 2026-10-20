@@ -1,0 +1,53 @@
+{
+  "roleplay": "A6",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:03.328Z",
+  "durationMs": 5571,
+  "promptSha256": "6ea9431c3771eb811a053b3506a4d1c368533f2dbcba00429d5c7d49f5f4771f",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying the same bill twice is frustrating. I'm sorry."
+      ],
+      "reason": "Agent acknowledged the frustration and apologized, but did not respond to the rent-due-Friday stress Dana raised.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+      ],
+      "reason": "Agent verified the core facts, but ignored Dana's mention of no email, missed the rent deadline, and did not notice the email typo.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "The duplicate should get refunded.",
+        "A refund request has been put in for it."
+      ],
+      "reason": "Agent used vague, passive language and never said they would personally handle it, even after Dana asked 'Is someone doing it?'.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "It should be back in your account in 3 to 5 business days."
+      ],
+      "reason": "Agent offered the slow standard refund, so it may not arrive before Friday's rent; they did not mark it urgent (about 2 business days), fix the email typo, add the account note, or give a reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?",
+        "Thanks for calling, Dana. Take care."
+      ],
+      "reason": "Agent summarized the refund, checked for other needs, and ended politely, but the summary repeated a timeline that doesn't meet Dana's need and left out next steps or a reference number.",
+      "level": 2
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "roleplay": "B4",
+  "rubric": "draft",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:51.863Z",
+  "durationMs": 7535,
+  "promptSha256": "ce17f85eace2d30e954b75d28549d53ee1bbca10d53ca0c4bfdc4cc6cffdf04e",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, losing a day off work to a no-show is rough. I'm sorry."
+      ],
+      "reason": "The agent named the specific impact (lost day off) and apologised, though it was brief and not revisited when the customer raised the fee worry.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Okay, so your install was this morning, 8 to noon, and the technician never arrived. Right?"
+      ],
+      "reason": "The agent confirmed the main issue but ignored the customer's concern about the unexpected $50 install fee and never acknowledged it.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "The agent took action directly and applied the credit without deflecting, but did not explicitly own the failure or the fee concern.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "Rebooking and the credit were correct, but the agent left the $50 fee (free on his plan) unaddressed, offered no technician call-ahead note, no Saturday option, and no reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Great. Anything else?",
+        "Alright, thanks for calling. Bye now."
+      ],
+      "reason": "The agent asked if anything else was needed and was polite, but gave no recap of the appointment, no reference number, and no apology or reassurance, so the close was abrupt.",
+      "level": 2
+    }
+  ]
+}

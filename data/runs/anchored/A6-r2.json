@@ -1,0 +1,54 @@
+{
+  "roleplay": "A6",
+  "rubric": "anchored",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:41.367Z",
+  "durationMs": 5693,
+  "promptSha256": "40fd3c8608b56de266ec18126c668988f4d6ca1427def2619684cfa2c29d84a3",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying the same bill twice is frustrating. I'm sorry."
+      ],
+      "reason": "The agent names the double payment, which fits this call, but never refers back to it or to the rent due Friday later in the call, so it is not Advanced.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+      ],
+      "reason": "The agent plays the problem back and checks it, but ignores the missed email (the typo in the address) that the customer mentioned in passing.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "A refund request has been put in for it.",
+        "The duplicate should get refunded.",
+        "the duplicate $84.50 will be refunded to your bank"
+      ],
+      "reason": "Every action is in passive or hedged wording with no first-person \"I\" doing anything, so it stays at Developing.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "It should be back in your account in 3 to 5 business days.",
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days."
+      ],
+      "reason": "The refund is the right fix with an amount and time frame, but the agent does not check it works for the customer's Friday rent deadline, offer the urgent refund, or fix the email.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?"
+      ],
+      "reason": "The agent recaps the refund and its timing and asks if anything else is needed, but gives no reference number or way back if the refund does not arrive.",
+      "level": 3
+    }
+  ]
+}

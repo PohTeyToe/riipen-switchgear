@@ -1,0 +1,54 @@
+{
+  "roleplay": "C2",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:20.467Z",
+  "durationMs": 8186,
+  "promptSha256": "4255894ebc32fcc04d84351f0f034802ffa5b130187c20e6d38fb6358cad8334",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent names the $25 jump specific to this customer, but never refers back to her situation later, so it stops at Proficient.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "Okay. Your promotion ended last month."
+      ],
+      "reason": "The agent asks only for the detail needed and never plays the problem back or checks understanding, and doesn't address her concern about not being warned or her switching threat.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill.",
+        "The loyalty rate can be applied to your account"
+      ],
+      "reason": "Actions are stated in passive or hedged wording with no first-person 'I' doing it.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent gives the right fix with amount, duration and start, but doesn't check it fits her situation or offer the alternative choice, and doesn't address the missing warning.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps the change and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

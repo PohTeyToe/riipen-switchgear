@@ -1,0 +1,54 @@
+{
+  "roleplay": "B6",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:24.109Z",
+  "durationMs": 9602,
+  "promptSha256": "6c349eaafdde03b27064e44c5741253d7a4131587c5bc48f5a918bf326c3b14b",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, I'm sorry you lost a day off work waiting on us."
+      ],
+      "reason": "The agent names the customer's specific loss of a day off waiting, but never refers back to it later (the sign-off is generic).",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So nobody came for this morning's install, and the text shows a $50 fee when you were told install was free. Did I get that right?",
+        "On the fee: install is free on your plan, and I've removed the $50 charge."
+      ],
+      "reason": "The agent plays back the problem in their own words and checks it, and also picks up the $50 fee the customer raised in passing and deals with it.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I've removed the $50 charge.",
+        "I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+      ],
+      "reason": "The agent says in the first person what they did, but does nothing extra to prevent a repeat, such as the technician call-ahead note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I have tomorrow from 8 to 10 am or Saturday from 9 to 11 am. Which works better for you?",
+        "I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+      ],
+      "reason": "The agent applies the right fixes (fee removed, $25 credit, new slot with date and time) and offers a choice of slots for the customer to pick from.",
+      "level": 4
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, the $50 fee is removed, your install is Saturday from 9 to 11 am, and there's a $25 credit on your account. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or way back if the visit doesn't happen.",
+      "level": 3
+    }
+  ]
+}

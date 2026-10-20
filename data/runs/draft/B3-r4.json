@@ -1,0 +1,55 @@
+{
+  "roleplay": "B3",
+  "rubric": "draft",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:47.907Z",
+  "durationMs": 5482,
+  "promptSha256": "d5aa8c91c5d18e3b975d073d1dbe0d4a8d021fa3b863c6476397f86bbc91eb8c",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for the inconvenience.",
+        "I understand your frustration."
+      ],
+      "reason": "Both statements are generic and brief, and they don't acknowledge that Marcus took the day off work and waited for nothing.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "Okay, I'm going to book you a new appointment."
+      ],
+      "reason": "The agent ignored Marcus's $50 install fee complaint, never answered or confirmed it, and didn't ask about his availability or offer the Saturday option.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to book you a new appointment.",
+        "I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent acted on the missed appointment by rebooking and applying the credit, but didn't own the unaddressed fee concern or apologize specifically for the missed visit.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent rebooked and applied the policy credit, but left the $50 fee unresolved (install is free), didn't offer the technician call-ahead note or the Saturday option, and gave no reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?",
+        "Thank you for calling Northline Internet. Have a great day."
+      ],
+      "reason": "The agent recapped the appointment and credit and closed politely, but the recap omitted the fee issue, gave no reference number, and ended with a customer who was still unresolved.",
+      "level": 3
+    }
+  ]
+}

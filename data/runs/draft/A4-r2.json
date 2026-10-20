@@ -1,0 +1,54 @@
+{
+  "roleplay": "A4",
+  "rubric": "draft",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:38.217Z",
+  "durationMs": 8582,
+  "promptSha256": "affdcfbbc1e044735a4a2e24450a9d55f746888f570150494c7b10df08510a72",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Oh no, Dana. A double charge right at the start of the month is a pain. I'm sorry."
+      ],
+      "reason": "Dev acknowledged the problem and apologized warmly, but did not respond to the stress about rent due Friday when Dana raised it.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can you give me the last four digits of the bank account it came out of?",
+        "I'm going to refund the second one now."
+      ],
+      "reason": "Dev ignored two cues from Dana, the rent due Friday and the missing email, so the response missed her time pressure and the email problem behind it.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one now.",
+        "I've already sent it through."
+      ],
+      "reason": "Dev acted right away on the refund, but took ownership only of the narrow task and not of the full problem, including the missing emails and the Friday deadline.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "You'll get it back in 3 to 5 business days. I've already sent it through."
+      ],
+      "reason": "The duplicate was refunded, but Dev did not mark it urgent, so it likely arrives after Friday's rent. Dev also did not fix the gmial.com email typo, add the account note, or give a reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else I can do for you?",
+        "Alright, thanks for calling. Take care."
+      ],
+      "reason": "The close was polite and offered more help, but it had no recap, no reference number, no confirmation of next steps, and no check that the refund timing worked for Dana.",
+      "level": 2
+    }
+  ]
+}

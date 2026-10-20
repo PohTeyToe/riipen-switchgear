@@ -1,0 +1,55 @@
+{
+  "roleplay": "A3",
+  "rubric": "draft",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:09:06.171Z",
+  "durationMs": 6560,
+  "promptSha256": "e048ac47519713e2991950087e917c6d720d3fbf674f9368f3dd21aac660a3fd",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for any inconvenience this may have caused.",
+        "I understand your frustration."
+      ],
+      "reason": "The agent used stock empathy phrases but never acknowledged the specific rent-on-Friday pressure Dana raised.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just so I'm clear, there are two charges of $84.50 on the 3rd, for the same bill?"
+      ],
+      "reason": "The agent confirmed the duplicate charge details but ignored Dana's mention of the missing payment email and her Friday rent deadline.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one right now.",
+        "I've submitted it, so you don't need to do anything else."
+      ],
+      "reason": "The agent took action on the refund right away, but did not own the broader problem, including the rent deadline or the missing email.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund takes 3 to 5 business days to reach your bank account.",
+        "I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days."
+      ],
+      "reason": "The agent refunded the duplicate but did not mark it urgent, which would have got the money back in about 2 business days, before Friday's rent. The agent also did not fix the email typo (gmial.com), add an account note, or give a reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So to recap, I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days. Is there anything else I can help you with?",
+        "Thank you for calling Northline Internet. Have a great day."
+      ],
+      "reason": "The close was polite and included a recap and an offer of more help, but the recap was inaccurate for Dana's needs. It gave no reference number, and the unresolved email problem and rent timing were left open.",
+      "level": 2
+    }
+  ]
+}

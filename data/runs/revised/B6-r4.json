@@ -1,0 +1,53 @@
+{
+  "roleplay": "B6",
+  "rubric": "revised",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:02.544Z",
+  "durationMs": 10337,
+  "promptSha256": "ff2bbbb9251eb59b2e73f1e34a241a2b5995b62231b109be66f392f922c31eee",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, I'm sorry you lost a day off work waiting on us."
+      ],
+      "reason": "The apology names the customer's lost day off, which fits only this call, but the agent never refers back to his situation later, so it stays at 3.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So nobody came for this morning's install, and the text shows a $50 fee when you were told install was free. Did I get that right?",
+        "On the fee: install is free on your plan, and I've removed the $50 charge."
+      ],
+      "reason": "The agent plays back both problems in their own words and checks them, then deals with the $50 fee the customer raised in passing.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I've removed the $50 charge.",
+        "I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+      ],
+      "reason": "The agent says in the first person what they did, but does not add any extra step to prevent a repeat, such as the technician call-ahead note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+      ],
+      "reason": "The agent fixes the missed install with a clear date, time and credit amount. The slot choice is just the available options and is not tailored to his situation, and the agent does not check Saturday suits him beyond his pick, so it stays at 3.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, the $50 fee is removed, your install is Saturday from 9 to 11 am, and there's a $25 credit on your account. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps what was done and checks for anything else, but gives no reference number or named way back.",
+      "level": 3
+    }
+  ]
+}

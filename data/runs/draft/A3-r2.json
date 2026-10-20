@@ -1,0 +1,54 @@
+{
+  "roleplay": "A3",
+  "rubric": "draft",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:34.152Z",
+  "durationMs": 7836,
+  "promptSha256": "e048ac47519713e2991950087e917c6d720d3fbf674f9368f3dd21aac660a3fd",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for any inconvenience this may have caused.",
+        "I understand your frustration."
+      ],
+      "reason": "The agent used generic scripted empathy and never acknowledged the specific rent-on-Friday stress Dana raised.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just so I'm clear, there are two charges of $84.50 on the 3rd, for the same bill?"
+      ],
+      "reason": "The agent confirmed the duplicate charge but ignored Dana's Friday rent deadline and the missing-email comment, which were important cues.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one right now.",
+        "I've submitted it, so you don't need to do anything else."
+      ],
+      "reason": "The agent acted promptly on the refund but did not look into the missing email or follow through on the wider problem.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund takes 3 to 5 business days to reach your bank account."
+      ],
+      "reason": "The standard refund will likely miss Friday's rent, and the agent did not offer the urgent refund (about 2 business days), fix the email typo (gmial.com), or add the duplicate-payment account note.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So to recap, I've refunded the duplicate payment of $84.50 and you'll see it in 3 to 5 business days. Is there anything else I can help you with?",
+        "Thank you for calling Northline Internet. Have a great day."
+      ],
+      "reason": "The close was polite and included a recap and an offer of more help, but it gave no reference number and left Dana's concerns about rent and email unresolved.",
+      "level": 2
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "roleplay": "B5",
+  "rubric": "revised",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:02.431Z",
+  "durationMs": 5980,
+  "promptSha256": "e7e0df0e2741fcaa2e06a7f490dce4c2beeb2ca1109d59e50ea764b519169c5f",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Sorry about that.",
+        "Okay, have a good one."
+      ],
+      "reason": "Only a stock apology that fits any call, and the closing line brushes off the customer's lost day, so a brush-off behaviour appears.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "What's the issue exactly?"
+      ],
+      "reason": "The customer had already said the technician did not show up, and the agent made him repeat it.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "That's a dispatch problem. Customer service doesn't book technicians. You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent blames another team and sends the customer elsewhere instead of acting.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "No fix was offered: no rebooking, no $25 credit, and the claim that the agent cannot rebook is wrong.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay, have a good one."
+      ],
+      "reason": "The call ends with no recap and no check for anything else, and no reference number.",
+      "level": 1
+    }
+  ]
+}

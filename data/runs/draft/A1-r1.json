@@ -1,0 +1,63 @@
+{
+  "roleplay": "A1",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:06:54.296Z",
+  "durationMs": 9031,
+  "promptSha256": "d811df063304d1edf988190380e70c6db4510ed68e0ad0ceeb855ef779c5a2d5",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Having the same bill come out of your bank account twice is stressful.",
+        "Because of your rent, I've marked it urgent",
+        "I hope Friday goes smoothly, Dana."
+      ],
+      "reason": "The agent acknowledged the stress early, tied the urgent refund to her rent worry, and came back to that worry at the end.",
+      "level": 4
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So that's two charges of $84.50 on the 3rd, rent due Friday, and no payment email. Did I get that right?",
+        "Because of your rent, I've marked it urgent",
+        "About the missing email: the address on your account says gmial.com instead of gmail.com."
+      ],
+      "reason": "The agent summarised the amount, the date, the rent deadline and the missing email, then got Dana to confirm. It used those details to choose the urgent refund and to find the email typo.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Let me look at it right now.",
+        "The second one is a duplicate on our side, not anything you did.",
+        "I've just issued the refund for $84.50.",
+        "I've fixed it, so payment emails will reach you now."
+      ],
+      "reason": "The agent accepted that the error was the company's and acted on every part of the problem herself, with no deflection or handoff.",
+      "level": 4
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've marked it urgent, so it goes out today and should reach your bank by Thursday. Does that work for you?",
+        "I've fixed it, so payment emails will reach you now.",
+        "I've also added a note to your account so a duplicate payment gets flagged before it's charged."
+      ],
+      "reason": "The agent refunded the duplicate, expedited it to arrive before the Friday rent, fixed the email typo that caused the missed notice, and added a flag to prevent a repeat. The agent offered no extra fix for the rent shortfall, but Dana agreed that Thursday works.",
+      "level": 4
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap: the duplicate $84.50 is refunded and marked urgent, so it should be in your bank by Thursday, and your email is fixed.",
+        "Your reference number is RF-20417 if anything doesn't show up.",
+        "Is there anything else I can help with?",
+        "I hope Friday goes smoothly, Dana. Thanks for your patience."
+      ],
+      "reason": "The agent recapped the outcome, gave a reference number, checked for other needs and ended warmly. The close did not mention the account note in the recap and had no formal thanks for calling, which are small gaps.",
+      "level": 4
+    }
+  ]
+}

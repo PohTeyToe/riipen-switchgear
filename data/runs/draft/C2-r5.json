@@ -1,0 +1,54 @@
+{
+  "roleplay": "C2",
+  "rubric": "draft",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:43.647Z",
+  "durationMs": 6806,
+  "promptSha256": "f1b3f075cd7b11eca63aa227b04c25bec1fabb7046a719abf06829c297a595cf",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent gave one genuine, specific acknowledgement of the frustration but did not address her complaint about not being warned or her possible switch, and showed no further warmth.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "Your promotion ended last month."
+      ],
+      "reason": "The agent captured the price jump but ignored her statements about no warning and possibly switching, and never explained or acknowledged them.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill."
+      ],
+      "reason": "The agent took action on the bill but did not apologise for the missing warning, address the churn risk, or take responsibility to prevent a repeat.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent applied a valid $75 loyalty rate with clear terms, but offered only one option, skipped the $60 plan and the renewal reminders that would solve the no-warning problem, and did not explain that $75 is still $10 above her old price.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Is there anything else I can help with?",
+        "Thanks for calling, Olivia."
+      ],
+      "reason": "The agent recapped the rate and asked if anything else was needed, but gave no reference number, no mention of reminders, and a curt sign-off.",
+      "level": 2
+    }
+  ]
+}

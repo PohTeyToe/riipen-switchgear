@@ -1,0 +1,54 @@
+{
+  "roleplay": "C2",
+  "rubric": "revised",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:12.882Z",
+  "durationMs": 7475,
+  "promptSha256": "6cdc06e31a00ce51b0d9f49f87a45ee78423abd6494d56e70168ee6b957b0327",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent names the $25 jump the customer experienced in words specific to this call, but never refers back to her situation later (e.g., the missing warning) so it stops at proficient.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "Okay. Your promotion ended last month."
+      ],
+      "reason": "The agent asks only for the account number and never plays the problem back or checks it, and does not address her passing comment that nobody warned her or her switching threat.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill."
+      ],
+      "reason": "Action is described only in passive or hedged terms ('can be applied', 'that'll get changed') with no first-person 'I' doing it.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent gives a fix with amount, duration and start time, but does not check it suits her situation or offer a choice such as the cheaper plan.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?",
+        "Thanks for calling, Olivia."
+      ],
+      "reason": "The agent recaps the change and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

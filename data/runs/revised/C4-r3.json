@@ -1,0 +1,55 @@
+{
+  "roleplay": "C4",
+  "rubric": "revised",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:47.219Z",
+  "durationMs": 12649,
+  "promptSha256": "3ad60f66f932527c576f4ab9642459f81809935ba2bea434e79e50327df155e1",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "A $25 jump with no heads-up would make me want to leave too.",
+        "Sorry again it came as a surprise. You won't be caught off guard like that again."
+      ],
+      "reason": "The agent names Olivia's $25 jump with no warning in words specific to this call, then refers back to the surprise in the closing line.",
+      "level": 4
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So two things: the bill went from $65 to $90, and nobody warned you it was coming. Is that right?"
+      ],
+      "reason": "The agent plays the problem back in their own words and checks it before fixing it, but does not pick up a separate passing concern.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I've moved you to our loyalty rate, $75 a month for the next 12 months, starting with your next bill.",
+        "And I've turned on renewal reminders, so you'll get a message 30 days before any rate ends."
+      ],
+      "reason": "The agent uses first-person action language and, without being asked, turns on renewal reminders so the problem does not recur.",
+      "level": 4
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've moved you to our loyalty rate, $75 a month for the next 12 months, starting with your next bill."
+      ],
+      "reason": "The agent fixes the bill issue with a clear amount, duration and start date, but does not check that the fix suits Olivia or offer a choice.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap: you're on the loyalty rate at $75 a month for 12 months from your next bill, and renewal reminders are on.",
+        "Your reference number is LR-30981.",
+        "Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps what was done and what happens next, gives a reference number and checks whether anything else is needed.",
+      "level": 4
+    }
+  ]
+}

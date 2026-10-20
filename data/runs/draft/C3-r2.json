@@ -1,0 +1,56 @@
+{
+  "roleplay": "C3",
+  "rubric": "draft",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:05.072Z",
+  "durationMs": 7958,
+  "promptSha256": "716adc3e23ebf5ac8bba39e39b40337943c96e9e1b9b930fbaf1d16fbfdebf88",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry for any inconvenience, Olivia.",
+        "I hear you."
+      ],
+      "reason": "The apology is generic and 'inconvenience' undersells her frustration about no warning, and the agent never acknowledged the missed notice or her threat to leave.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to check, your bill went from $65 last month to $90 this month?",
+        "Which fits how you use the internet?"
+      ],
+      "reason": "The agent confirmed the facts and asked about her usage, but did not address her complaint about no warning or her switching concern.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'll set that up.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "The agent acted on the request and completed the change, but never owned the missing warning or addressed the risk of her leaving.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A loyalty rate of $75 a month for 12 months, or our slower plan at $60 a month. Both start on your next bill.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "The agent explained the price change, offered both options clearly with start timing, and applied her choice, but did not offer renewal reminders, so the same surprise could recur in 12 months.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else?",
+        "Have a great day."
+      ],
+      "reason": "The close was polite but abrupt: no recap of the $75 rate, no reference number, no mention of reminders, and no thanks for her loyalty.",
+      "level": 1
+    }
+  ]
+}

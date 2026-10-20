@@ -1,0 +1,53 @@
+{
+  "roleplay": "B3",
+  "rubric": "anchored",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:48.068Z",
+  "durationMs": 8282,
+  "promptSha256": "07f66e88093d7b11671989b9ffdc73bf7f39b7a9ae0163e3ce21d0b5def36347",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for the inconvenience.",
+        "I understand your frustration."
+      ],
+      "reason": "Only stock lines that would fit any call; nothing names Marcus's missed window or the day off work.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?"
+      ],
+      "reason": "The agent asked for a detail the fix needed but never played the problem back, and ignored the $50 install fee concern raised in passing.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to book you a new appointment.",
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent states in the first person what they are doing and have done within the call, but does no extra preventive step such as the technician call-ahead note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The rebooking and the credit give a date, time and amount, but the $50 fee complaint was never addressed and the fix was not checked against Marcus's availability or offered as a choice, so it is not complete.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?"
+      ],
+      "reason": "The agent recapped and checked for anything else, but gave no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

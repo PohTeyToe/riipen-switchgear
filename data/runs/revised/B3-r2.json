@@ -1,0 +1,53 @@
+{
+  "roleplay": "B3",
+  "rubric": "revised",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:46.740Z",
+  "durationMs": 9215,
+  "promptSha256": "7c3adaac0a443cc5287b93174d7ddd8e1016c2076bb87fdd36a11fb9432440bb",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for the inconvenience.",
+        "I understand your frustration."
+      ],
+      "reason": "Both lines are stock phrases that would fit any call and never mention the missed appointment or the day off work.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?"
+      ],
+      "reason": "The agent asked only for a detail the fix needed, never played the problem back, and ignored the $50 fee the customer raised in passing.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, I'm going to book you a new appointment.",
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but adds no extra step such as a technician call-ahead note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent fixes the missed appointment with a clear date, time window and credit amount, but never checks the slot suits Marcus or offers a choice.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?"
+      ],
+      "reason": "The agent recaps the booking and credit and asks if anything else is needed, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

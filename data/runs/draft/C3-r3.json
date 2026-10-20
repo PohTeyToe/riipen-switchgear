@@ -1,0 +1,56 @@
+{
+  "roleplay": "C3",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:40.667Z",
+  "durationMs": 8291,
+  "promptSha256": "716adc3e23ebf5ac8bba39e39b40337943c96e9e1b9b930fbaf1d16fbfdebf88",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry for any inconvenience, Olivia.",
+        "I hear you."
+      ],
+      "reason": "The apology is generic and 'inconvenience' undersells her frustration about no warning and her threat to leave, though 'I hear you' gives minimal acknowledgment.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to check, your bill went from $65 last month to $90 this month?",
+        "Which fits how you use the internet?"
+      ],
+      "reason": "He confirmed the bill details and asked about her usage, but did not address her complaint that no one warned her.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'll set that up.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "He took action on the request, but he never acknowledged the missing warning, apologized for it, or took responsibility for preventing a repeat.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A loyalty rate of $75 a month for 12 months, or our slower plan at $60 a month. Both start on your next bill.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "He explained the price change, offered two clear options with start dates, and applied her choice, but he left out renewal reminders and did not mention that the $90 bill stays for now.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else?",
+        "Have a great day."
+      ],
+      "reason": "The close is abrupt: he gave no recap of the new rate, no reference number, no reminder setup, and did not check whether she would stay.",
+      "level": 1
+    }
+  ]
+}

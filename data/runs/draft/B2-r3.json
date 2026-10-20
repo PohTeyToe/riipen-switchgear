@@ -1,0 +1,53 @@
+{
+  "roleplay": "B2",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:15.734Z",
+  "durationMs": 5660,
+  "promptSha256": "756d5ff87c425656bb2942083fbdfb8b65b1210a16a3db65565ce0c6bf1c1eb7",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry, Marcus. Taking a day off and having no one show up is really frustrating."
+      ],
+      "reason": "The agent apologized and specifically acknowledged the day off and the frustration, but showed no further empathy later in the call.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me confirm: your install was today between 8 and noon, and no technician arrived?"
+      ],
+      "reason": "The agent confirmed the missed appointment details but ignored the customer's question about the $50 install fee.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to get this rebooked for you right now.",
+        "I've done that on my end, so you don't need to call back to book it."
+      ],
+      "reason": "The agent took charge of rebooking and said the customer wouldn't need to call back, but did not own the whole issue, including the fee concern and the missed-appointment credit.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've put in a new booking. A technician will come out to you soon, and they'll reach out to confirm the time."
+      ],
+      "reason": "The agent gave no specific slot, did not address the $50 fee, offered no $25 credit as policy requires, did not add the call-ahead note, and gave no reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So to recap, I've rebooked your installation, and a technician will contact you to confirm the time. Is there anything else I can help with?",
+        "Thanks for your patience, Marcus. Have a good afternoon."
+      ],
+      "reason": "The close was polite and included a recap and an offer of more help, but the recap was vague, with no date, time or reference number, and it left the fee question open.",
+      "level": 2
+    }
+  ]
+}

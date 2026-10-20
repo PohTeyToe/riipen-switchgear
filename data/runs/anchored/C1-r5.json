@@ -1,0 +1,52 @@
+{
+  "roleplay": "C1",
+  "rubric": "anchored",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:39.099Z",
+  "durationMs": 10318,
+  "promptSha256": "997198d60734a22824ddcb2d11ae435182501c32241b6afd95e86a50df046526",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "A $25 jump with no warning is a nasty surprise."
+      ],
+      "reason": "The agent names the $25 jump and the lack of warning, which fits only this call, but never refers back to her situation later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your bill went from $65 to $90 this month, and you want to know why. Is that right?"
+      ],
+      "reason": "The agent plays the problem back in their own words and checks it before fixing, but does not act on her passing concern that nobody warned her something was ending.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill.",
+        "I've moved you to the loyalty rate of $75 a month for 12 months"
+      ],
+      "reason": "The agent says in the first person what they are doing to fix it, but does nothing extra to prevent a repeat, such as turning on renewal reminders.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm putting you on our loyalty rate, $75 a month for the next 12 months, starting with your next bill."
+      ],
+      "reason": "The agent gives the right fix with amount, duration and start date, but offers no choice and does not check that it suits her.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've moved you to the loyalty rate of $75 a month for 12 months, and it starts on your next bill. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or way back if the fix does not happen.",
+      "level": 3
+    }
+  ]
+}

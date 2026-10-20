@@ -1,0 +1,55 @@
+{
+  "roleplay": "C3",
+  "rubric": "anchored",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:40.164Z",
+  "durationMs": 7054,
+  "promptSha256": "431eed4b777b1cb5064e966efa31aed8d66d37c2334ce108a6a797535a509714",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry for any inconvenience, Olivia.",
+        "I hear you."
+      ],
+      "reason": "Only stock lines that would fit any call; nothing names Olivia's price jump or the missing warning.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to check, your bill went from $65 last month to $90 this month?"
+      ],
+      "reason": "The agent played back the price change and checked it, but left out the missing warning and the threat to switch, and didn't deal with those concerns.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'll set that up.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but does nothing extra to prevent a repeat, such as turning on renewal reminders.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A loyalty rate of $75 a month for 12 months, or our slower plan at $60 a month. Both start on your next bill.",
+        "Which fits how you use the internet?"
+      ],
+      "reason": "The agent applied the right fix with amount, duration and start date, and offered a choice that fits her use, but didn't confirm that the fix works for her beyond that.",
+      "level": 4
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else?",
+        "Have a great day."
+      ],
+      "reason": "The agent checked whether she needed anything else but gave no recap and no reference number.",
+      "level": 2
+    }
+  ]
+}

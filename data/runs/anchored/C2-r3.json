@@ -1,0 +1,55 @@
+{
+  "roleplay": "C2",
+  "rubric": "anchored",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:33.409Z",
+  "durationMs": 7257,
+  "promptSha256": "4255894ebc32fcc04d84351f0f034802ffa5b130187c20e6d38fb6358cad8334",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent names the $25 increase and its effect on this customer in words specific to this call, but never refers back to her situation later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "Your promotion ended last month."
+      ],
+      "reason": "The agent asks only for the detail needed and explains the cause, but never plays the problem back to Olivia or checks that they understood it, and never addresses her lack of warning or her thought of switching.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill.",
+        "The loyalty rate can be applied to your account"
+      ],
+      "reason": "Actions are described in passive or hedged wording ('that'll get changed', 'can be applied') with no first-person 'I' doing the work.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent gives a correct fix with the amount, duration and start date, but never checks it suits her situation, offers the cheaper plan as a choice, or addresses the lack of warning.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?",
+        "Thanks for calling, Olivia."
+      ],
+      "reason": "The agent recaps the change and when it starts and checks for anything else, but gives no reference number or way back if the change doesn't happen.",
+      "level": 3
+    }
+  ]
+}

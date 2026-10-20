@@ -1,0 +1,55 @@
+{
+  "roleplay": "C2",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:33.725Z",
+  "durationMs": 7944,
+  "promptSha256": "f1b3f075cd7b11eca63aa227b04c25bec1fabb7046a719abf06829c297a595cf",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent gave one good empathic acknowledgment early on but did not address her complaint about not being warned or her switching concern afterward.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia.",
+        "Your promotion ended last month."
+      ],
+      "reason": "The agent picked up the price jump but never acknowledged that she wasn't warned or that she might switch, and didn't ask about her needs or mention the cheaper plan option.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill.",
+        "Okay. Your promotion ended last month."
+      ],
+      "reason": "The agent carried out the change but did not apologize for the lack of warning or take responsibility for preventing a repeat, and offered no reference number.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent applied a valid loyalty rate and confirmed terms, but did not offer the $60 plan, renewal reminders, or a reference number, and never explained that the $75 rate still leaves her $10 above her old price, nor checked it would keep her.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?",
+        "Thanks for calling, Olivia."
+      ],
+      "reason": "The agent summarized the change and asked if anything else was needed, but the close was abrupt, with no reference number, no reminder setup, and no acknowledgment of her concern about leaving.",
+      "level": 2
+    }
+  ]
+}

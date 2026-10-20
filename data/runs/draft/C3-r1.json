@@ -1,0 +1,56 @@
+{
+  "roleplay": "C3",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:28.089Z",
+  "durationMs": 8924,
+  "promptSha256": "716adc3e23ebf5ac8bba39e39b40337943c96e9e1b9b930fbaf1d16fbfdebf88",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry for any inconvenience, Olivia.",
+        "I hear you."
+      ],
+      "reason": "The agent offered brief, generic apologies and acknowledgment but never addressed her frustration about not being warned or her worry about leaving.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to check, your bill went from $65 last month to $90 this month?",
+        "Which fits how you use the internet?"
+      ],
+      "reason": "The agent confirmed the bill details and asked about her usage to fit the options, though he did not address her point about no warning or her intent to switch.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'll set that up.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "The agent took action to fix the bill, but did not acknowledge the missing warning, apologize for it specifically, or take responsibility for preventing a repeat.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A loyalty rate of $75 a month for 12 months, or our slower plan at $60 a month. Both start on your next bill.",
+        "Done, I've moved you to the loyalty rate."
+      ],
+      "reason": "The agent explained the price change, offered clear options with start timing, and applied her choice, but did not offer renewal reminders, which addresses her core complaint of no warning.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else?",
+        "Have a great day."
+      ],
+      "reason": "The close was polite but abrupt, with no recap of the new rate and its 12-month term, no reference number, no mention of reminders, and no thanks for her loyalty.",
+      "level": 1
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "roleplay": "B5",
+  "rubric": "anchored",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:55.293Z",
+  "durationMs": 5059,
+  "promptSha256": "4d80a1b1ddcef84b53c1063b96633883f02106f123d968b809d60a3e7c30c5d2",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Sorry about that.",
+        "Okay, have a good one."
+      ],
+      "reason": "The agent gives only a stock apology and later brushes off the customer's frustration with a casual sign-off, so a Not yet behaviour appears.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "What's the issue exactly?"
+      ],
+      "reason": "The customer had already said the technician didn't show, and the agent made him repeat it, which is a Not yet behaviour.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "That's a dispatch problem. Customer service doesn't book technicians. You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent deflects to another team and sends the customer elsewhere instead of acting.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent offers no fix: no rebooking, no $25 credit, no note, and wrongly says they can't rebook.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay, have a good one."
+      ],
+      "reason": "The agent ends with no recap, no check for further needs and no reference number.",
+      "level": 1
+    }
+  ]
+}

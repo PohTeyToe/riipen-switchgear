@@ -1,0 +1,54 @@
+{
+  "roleplay": "A4",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:06:54.310Z",
+  "durationMs": 6273,
+  "promptSha256": "affdcfbbc1e044735a4a2e24450a9d55f746888f570150494c7b10df08510a72",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Oh no, Dana. A double charge right at the start of the month is a pain. I'm sorry."
+      ],
+      "reason": "Dev acknowledged the problem and apologised warmly, but did not respond to the rent-due-Friday stress Dana raised afterwards.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can you give me the last four digits of the bank account it came out of?",
+        "You'll get it back in 3 to 5 business days."
+      ],
+      "reason": "Dev ignored two cues from Dana, the rent due Friday and the missing email, so he never noticed that 3 to 5 business days could miss Friday or that the email address was wrong.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one now.",
+        "I've already sent it through."
+      ],
+      "reason": "Dev acted on the refund straight away, but he did not follow up on the missing email or the rent deadline, and he did not take responsibility for preventing a repeat.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "You'll get it back in 3 to 5 business days. I've already sent it through."
+      ],
+      "reason": "The standard refund will probably arrive after Friday's rent, and Dev did not mark it urgent (about 2 business days), fix the gmial.com email typo, add a duplicate-payment account note, or give a reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else I can do for you?",
+        "Alright, thanks for calling. Take care."
+      ],
+      "reason": "The close was polite but did not summarise the outcome, give a reference number, or confirm that the timing worked for Dana, who answered only 'Okay' and 'No'.",
+      "level": 2
+    }
+  ]
+}

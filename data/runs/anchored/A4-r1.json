@@ -1,0 +1,53 @@
+{
+  "roleplay": "A4",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:06:54.306Z",
+  "durationMs": 5161,
+  "promptSha256": "0f92902a2e778b8d9a5ac9a2fc86aae65642a53e4ec90089ab02bb3f3e2b18d3",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Oh no, Dana. A double charge right at the start of the month is a pain. I'm sorry."
+      ],
+      "reason": "The agent names the double charge at the start of the month, which fits this call, but never refers back to it later (rent due Friday).",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can you give me the last four digits of the bank account it came out of?"
+      ],
+      "reason": "The agent asks for a detail the fix needs but never plays the problem back, and ignores the missing-email concern.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one now.",
+        "I've already sent it through."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but does nothing extra such as fixing the email typo or adding a note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "You'll get it back in 3 to 5 business days."
+      ],
+      "reason": "The refund is the right fix with a time frame, but the agent missed the urgent option that would reach the bank in about 2 business days, which matters because rent is due Friday, so the fix does not fit her situation. The 3 to 5 day timeline would likely miss Friday.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else I can do for you?",
+        "Alright, thanks for calling. Take care."
+      ],
+      "reason": "The agent checks whether anything else is needed but gives no recap of what was done and no reference number.",
+      "level": 2
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "roleplay": "B4",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:22.795Z",
+  "durationMs": 5291,
+  "promptSha256": "ce17f85eace2d30e954b75d28549d53ee1bbca10d53ca0c4bfdc4cc6cffdf04e",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, losing a day off work to a no-show is rough. I'm sorry."
+      ],
+      "reason": "The agent acknowledged the lost day off and apologized, but the empathy was brief and not revisited, and it ignored the customer's surprise about the fee.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Okay, so your install was this morning, 8 to noon, and the technician never arrived. Right?"
+      ],
+      "reason": "The agent confirmed the main facts, but it never acknowledged or asked about the $50 install fee the customer raised.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "The agent acted right away to fix the missed appointment, but it did not take responsibility for the fee concern or offer a reference number.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "The agent rebooked and applied the policy credit, but it left the $50 fee unaddressed even though install is free on his plan, and it did not offer the technician call-ahead note or a reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Great. Anything else?",
+        "Alright, thanks for calling. Bye now."
+      ],
+      "reason": "The agent did ask if there was anything else, but it did not recap the booking, give a reference number, or say what to expect, and the sign-off was abrupt.",
+      "level": 2
+    }
+  ]
+}

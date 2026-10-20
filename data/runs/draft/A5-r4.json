@@ -1,0 +1,58 @@
+{
+  "roleplay": "A5",
+  "rubric": "draft",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:38.573Z",
+  "durationMs": 7096,
+  "promptSha256": "715cc531c29caf96199119ebf2fe5404ce659da28933ec8181d5949ef3e47e1b",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Okay. What's your name?",
+        "Double charges usually come from the bank's side, not ours.",
+        "There's nothing I can do about the timing."
+      ],
+      "reason": "The agent never acknowledged Dana's frustration or her rent deadline and deflected blame onto the bank.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Okay. What's your name?",
+        "And what's the problem?",
+        "Double charges usually come from the bank's side, not ours."
+      ],
+      "reason": "The agent asked for information Dana had already given, then contradicted her account and ignored her Friday rent deadline.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Double charges usually come from the bank's side, not ours.",
+        "I can request a refund for the second charge.",
+        "There's nothing I can do about the timing."
+      ],
+      "reason": "The agent deflected responsibility and gave up on the timing, though the request for a refund was a minimal step.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I can request a refund for the second charge. It'll come back at some point.",
+        "There's nothing I can do about the timing."
+      ],
+      "reason": "The agent offered a vague refund and wrongly said nothing could be done, missing the urgent refund (about 2 business days), the email typo fix, the account note and the reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay. Bye."
+      ],
+      "reason": "The call ended abruptly with no summary, no reference number, no next steps and no check that Dana's needs were met.",
+      "level": 1
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "roleplay": "C4",
+  "rubric": "draft",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:05.765Z",
+  "durationMs": 7862,
+  "promptSha256": "f67131a9641d26434b474bfa96fa78c5c377a159d17b7866c68a23b1079d76ae",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "A $25 jump with no heads-up would make me want to leave too.",
+        "Sorry again it came as a surprise."
+      ],
+      "reason": "The agent acknowledged the frustration of the unannounced increase specifically and sincerely, though it did not explicitly address the customer's worry about switching.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So two things: the bill went from $65 to $90, and nobody warned you it was coming. Is that right?"
+      ],
+      "reason": "The agent accurately summarised both of the customer's concerns and confirmed them before moving to a solution.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Let me find out what happened.",
+        "I've moved you to our loyalty rate",
+        "I've turned on renewal reminders"
+      ],
+      "reason": "The agent took charge of the problem and acted on it directly without deflecting, though it did not apologise early.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Your 12-month promotion ended. I've moved you to our loyalty rate, $75 a month for the next 12 months, starting with your next bill.",
+        "I've turned on renewal reminders, so you'll get a message 30 days before any rate ends."
+      ],
+      "reason": "The agent explained the cause, applied the loyalty rate and reminders that address both complaints, but did not offer the $60 slower-plan option or check that the customer wanted the $75 rate before applying it.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap: you're on the loyalty rate at $75 a month for 12 months from your next bill, and renewal reminders are on. Your reference number is LR-30981. Is there anything else I can help with?",
+        "Thanks, Olivia."
+      ],
+      "reason": "The agent recapped the outcome, gave a reference number, checked for other needs and thanked the customer, though 'You won't be caught off guard like that again' slightly overpromises.",
+      "level": 4
+    }
+  ]
+}

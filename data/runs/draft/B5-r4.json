@@ -1,0 +1,54 @@
+{
+  "roleplay": "B5",
+  "rubric": "draft",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:53.390Z",
+  "durationMs": 4443,
+  "promptSha256": "3f6135010e64fd4f489dd1f48fdc030a2d8d8123461e82232e9be62c6ab57ebd",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Sorry about that.",
+        "Okay, have a good one."
+      ],
+      "reason": "The only empathy was a brief, generic apology that ignored the customer's lost day off and frustration.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "What's the issue exactly?",
+        "That's a dispatch problem."
+      ],
+      "reason": "The agent asked what the issue was right after the customer had stated it, which forced the customer to repeat it and showed the agent was not listening.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Customer service doesn't book technicians. You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent pushed the problem back to the customer and deflected twice, with no ownership.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent didn't rebook, apply the $25 missed-appointment credit, add a technician-call note, or give a reference number, even though all were available.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay, have a good one."
+      ],
+      "reason": "The agent ended abruptly on an upset customer with no summary, next steps, or reference number.",
+      "level": 1
+    }
+  ]
+}

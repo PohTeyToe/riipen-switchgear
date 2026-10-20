@@ -1,0 +1,54 @@
+{
+  "roleplay": "A2",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:06:54.303Z",
+  "durationMs": 8194,
+  "promptSha256": "1b10f6aaeac1d77f2be890961c9a8770d159258778cc52ab2b815b488a2bfcef",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Being charged twice for the same bill is frustrating, and I'm sorry that happened."
+      ],
+      "reason": "The agent acknowledged the frustration and apologized, but did not respond to her rent pressure on Friday when she raised it.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to confirm, you're seeing two payments of $84.50 on the 3rd, both for this month's bill?"
+      ],
+      "reason": "The agent confirmed the main details, but ignored Dana's mention of the Friday rent and her missing email, which were both important cues.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I see them both. I'm refunding the second payment now.",
+        "I've processed it on my end, so there's nothing you need to do."
+      ],
+      "reason": "The agent took action on the duplicate right away, but did not look into the missing email or the rent deadline, and said there was nothing more to do.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund will reach your bank in 3 to 5 business days.",
+        "I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days."
+      ],
+      "reason": "The refund was issued, but the agent did not mark it urgent (about 2 business days, which would likely arrive before Friday rent), did not fix the gmial.com email typo, did not add a note to flag a duplicate before it is charged, and gave no reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days. Is there anything else I can help you with today?",
+        "Thanks for calling, Dana. Have a good day."
+      ],
+      "reason": "The close was polite and included a recap and a check for other needs, but the recap left out the unresolved rent timing and email issues, and gave no reference number.",
+      "level": 3
+    }
+  ]
+}

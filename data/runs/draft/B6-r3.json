@@ -1,0 +1,55 @@
+{
+  "roleplay": "B6",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:26.723Z",
+  "durationMs": 5636,
+  "promptSha256": "a459e37a7bdf202cfe3fa48642a8ed961439bc5b57d6d924fec585eb74a9347d",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, I'm sorry you lost a day off work waiting on us."
+      ],
+      "reason": "The agent apologised and specifically acknowledged the lost day off, but showed no further empathy later in the call.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So nobody came for this morning's install, and the text shows a $50 fee when you were told install was free. Did I get that right?"
+      ],
+      "reason": "The agent accurately paraphrased both concerns and checked for understanding, and the customer confirmed.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I've removed the $50 charge.",
+        "Done. I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+      ],
+      "reason": "The agent acted directly on every issue without deflecting, but never explicitly apologised for the missed appointment on behalf of the company or offered a reference number.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "install is free on your plan, and I've removed the $50 charge.",
+        "I have tomorrow from 8 to 10 am or Saturday from 9 to 11 am. Which works better for you?",
+        "added a $25 credit for today."
+      ],
+      "reason": "The agent removed the fee, rebooked into the slot the customer preferred and applied the policy credit, though it did not offer the technician call-ahead note or a reference number.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, the $50 fee is removed, your install is Saturday from 9 to 11 am, and there's a $25 credit on your account. Is there anything else I can help with?",
+        "Thanks, Marcus. Enjoy the rest of your afternoon."
+      ],
+      "reason": "The agent recapped all actions, checked for further needs and ended politely, but gave no reference number and no call-ahead note to help ensure the technician arrives this time.",
+      "level": 3
+    }
+  ]
+}

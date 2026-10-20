@@ -1,0 +1,52 @@
+{
+  "roleplay": "C2",
+  "rubric": "anchored",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:43.051Z",
+  "durationMs": 7701,
+  "promptSha256": "4255894ebc32fcc04d84351f0f034802ffa5b130187c20e6d38fb6358cad8334",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent names the specific $25 jump and its effect on this customer, but never refers back to her situation later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?"
+      ],
+      "reason": "The agent asks only for a detail the fix needs and never plays the problem back or checks it, so it stays at Developing.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill."
+      ],
+      "reason": "The actions are stated in passive or hedged wording (\"can be applied\", \"that'll get changed\") with no \"I\" doing anything.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "it starts with your next bill"
+      ],
+      "reason": "The agent gives the right fix with amount and timing, but doesn't check it suits her or offer a choice, even though she said she might switch.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps the fix and asks if anything else is needed, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

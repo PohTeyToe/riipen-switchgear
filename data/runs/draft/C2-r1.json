@@ -1,0 +1,55 @@
+{
+  "roleplay": "C2",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:22.362Z",
+  "durationMs": 10752,
+  "promptSha256": "f1b3f075cd7b11eca63aa227b04c25bec1fabb7046a719abf06829c297a595cf",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent acknowledged the frustration with a personalized statement early on, but did not address the lack of warning or the switching concern afterward.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia.",
+        "Your promotion ended last month."
+      ],
+      "reason": "The agent picked up the price jump but never acknowledged her point that nobody warned her or her statement that she might switch.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill.",
+        "Okay. Your promotion ended last month."
+      ],
+      "reason": "The agent acted on the request but did not apologize for or take responsibility for the missing warning, or address the churn risk.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent applied a valid loyalty rate with clear terms, but did not offer the $60 plan option, the renewal reminders (which address her complaint), or a reference number, and did not confirm the $75 compared with her old $65 price.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?",
+        "Thanks for calling, Olivia."
+      ],
+      "reason": "The agent recapped the change and checked for further needs, but gave no reference number, no mention of reminders, and a very brief sign-off.",
+      "level": 3
+    }
+  ]
+}

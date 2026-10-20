@@ -1,0 +1,52 @@
+{
+  "roleplay": "A2",
+  "rubric": "revised",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:13.031Z",
+  "durationMs": 12428,
+  "promptSha256": "8d1d186ca03c52a6541e1ea0b17c77c011785961cb81caf79c375603ebdfd363",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Being charged twice for the same bill is frustrating, and I'm sorry that happened."
+      ],
+      "reason": "The agent names the double charge in words specific to this call, but never refers back to Dana's situation (rent on Friday) later, so level 4 is not met.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to confirm, you're seeing two payments of $84.50 on the 3rd, both for this month's bill?"
+      ],
+      "reason": "The agent plays the problem back in their own words and checks it before fixing, but ignores the email concern Dana mentioned in passing.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm refunding the second payment now.",
+        "I've processed it on my end, so there's nothing you need to do."
+      ],
+      "reason": "The agent says in the first person what they are doing within the call, with no extra step to prevent a recurrence.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund will reach your bank in 3 to 5 business days. It'll show up as a credit from Northline."
+      ],
+      "reason": "The duplicate is refunded with an amount and time frame, but the agent never checks it against Dana's Friday rent deadline or offers the urgent refund.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days. Is there anything else I can help you with today?"
+      ],
+      "reason": "The agent recaps what was done and what happens next and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

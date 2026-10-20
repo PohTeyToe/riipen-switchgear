@@ -1,0 +1,54 @@
+{
+  "roleplay": "B5",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:23.498Z",
+  "durationMs": 5630,
+  "promptSha256": "3f6135010e64fd4f489dd1f48fdc030a2d8d8123461e82232e9be62c6ab57ebd",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Sorry about that.",
+        "Okay, have a good one."
+      ],
+      "reason": "The only empathy was a brief, generic apology, and the agent ignored that the customer took the day off and then dismissed his frustration.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "What's the issue exactly?",
+        "That's a dispatch problem."
+      ],
+      "reason": "The agent asked what the issue was right after the customer had clearly explained it, which forced him to repeat himself, and then never acknowledged the details (8 to noon, day off).",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Customer service doesn't book technicians. You'll have to call dispatch.",
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent deflected the problem to dispatch and the customer instead of taking responsibility for it.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "Dispatch does bookings. Their number is on the website."
+      ],
+      "reason": "The agent did not rebook (tomorrow 8-10 am or Saturday 9-11 am), apply the $25 missed-appointment credit, offer a technician call-ahead note, or give a reference number, even though all were within their authority.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay, have a good one."
+      ],
+      "reason": "The agent ended the call abruptly with the issue unresolved, with no summary, next steps, reference number, or acknowledgement of the customer's frustration.",
+      "level": 1
+    }
+  ]
+}

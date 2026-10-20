@@ -1,0 +1,53 @@
+{
+  "roleplay": "B3",
+  "rubric": "anchored",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:46.992Z",
+  "durationMs": 5700,
+  "promptSha256": "07f66e88093d7b11671989b9ffdc73bf7f39b7a9ae0163e3ce21d0b5def36347",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for the inconvenience.",
+        "I understand your frustration."
+      ],
+      "reason": "Both lines are stock phrases that would fit any call and say nothing about Marcus missing a day of work or the no-show.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?"
+      ],
+      "reason": "The agent asks only for a detail the fix needs, never plays the problem back, and ignores the $50 install fee concern, though nothing shows the customer being made to repeat anything.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to book you a new appointment.",
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but does nothing extra to prevent a repeat, such as the technician call-ahead note.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The rebooking and the $25 credit are given with a date, time and amount, but the agent never addresses the $50 fee the customer raised, so the fix is incomplete.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or named way back, and the recap leaves out the unresolved fee.",
+      "level": 3
+    }
+  ]
+}

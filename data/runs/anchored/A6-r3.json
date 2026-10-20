@@ -1,0 +1,53 @@
+{
+  "roleplay": "A6",
+  "rubric": "anchored",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:10.425Z",
+  "durationMs": 20356,
+  "promptSha256": "40fd3c8608b56de266ec18126c668988f4d6ca1427def2619684cfa2c29d84a3",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying the same bill twice is frustrating. I'm sorry."
+      ],
+      "reason": "The agent names the double payment in words that fit only this call, but never refers back to the rent deadline or the situation later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+      ],
+      "reason": "The agent plays the problem back in their own words and checks it, but never picks up the missed-email concern.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "The duplicate should get refunded.",
+        "A refund request has been put in for it."
+      ],
+      "reason": "Every action is in passive or hedged wording with no 'I' doing it.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "It should be back in your account in 3 to 5 business days.",
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days."
+      ],
+      "reason": "The agent gives an amount and a time frame, but the standard refund may miss the Friday rent. The agent doesn't offer the urgent refund or fix the email typo, so it isn't the right fix for this customer.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?"
+      ],
+      "reason": "The agent recaps the refund and what happens next and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

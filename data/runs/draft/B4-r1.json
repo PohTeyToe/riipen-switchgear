@@ -1,0 +1,53 @@
+{
+  "roleplay": "B4",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:18.494Z",
+  "durationMs": 5154,
+  "promptSha256": "ce17f85eace2d30e954b75d28549d53ee1bbca10d53ca0c4bfdc4cc6cffdf04e",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, losing a day off work to a no-show is rough. I'm sorry."
+      ],
+      "reason": "The agent acknowledged the lost day off and apologised sincerely, but showed no further empathy, for example about the unexpected fee concern.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Okay, so your install was this morning, 8 to noon, and the technician never arrived. Right?"
+      ],
+      "reason": "The agent confirmed the main facts but ignored the customer's $50 install fee concern, and never asked about his availability for the new slot.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today."
+      ],
+      "reason": "The agent acted right away on the missed appointment and applied the credit without being asked, but did not address the fee or say what happens next.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm booking you the first slot tomorrow, 8 to 10 am, and I've added a $25 credit for today.",
+        "Great. Anything else?"
+      ],
+      "reason": "The agent rebooked and applied the policy credit, but left the $50 fee unaddressed even though install is free on his plan, and did not offer the technician call-ahead note or a reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Great. Anything else?",
+        "Alright, thanks for calling. Bye now."
+      ],
+      "reason": "The agent asked if anything else was needed and ended politely, but gave no recap, reference number or apology, and the sign-off was abrupt.",
+      "level": 2
+    }
+  ]
+}

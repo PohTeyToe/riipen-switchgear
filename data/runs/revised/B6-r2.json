@@ -1,0 +1,54 @@
+{
+  "roleplay": "B6",
+  "rubric": "revised",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:53.168Z",
+  "durationMs": 12507,
+  "promptSha256": "ff2bbbb9251eb59b2e73f1e34a241a2b5995b62231b109be66f392f922c31eee",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, I'm sorry you lost a day off work waiting on us."
+      ],
+      "reason": "The agent names the lost day off work, which fits only this call, but never refers back to his situation later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So nobody came for this morning's install, and the text shows a $50 fee when you were told install was free. Did I get that right?",
+        "On the fee: install is free on your plan, and I've removed the $50 charge."
+      ],
+      "reason": "The agent plays back the problem in their own words and checks it, then deals with the $50 fee the customer mentioned in passing.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I've removed the $50 charge.",
+        "I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+      ],
+      "reason": "The agent says in the first person what they did, but does nothing extra, such as the technician call-ahead note, to stop a repeat.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "For the install, I have tomorrow from 8 to 10 am or Saturday from 9 to 11 am. Which works better for you?",
+        "I've booked Saturday, 9 to 11 am, and added a $25 credit for today."
+      ],
+      "reason": "The agent gives a firm date and time and a $25 amount, but never checks the slot works around his work situation, so it stays at Proficient.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, the $50 fee is removed, your install is Saturday from 9 to 11 am, and there's a $25 credit on your account. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

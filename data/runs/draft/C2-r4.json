@@ -1,0 +1,54 @@
+{
+  "roleplay": "C2",
+  "rubric": "draft",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:15:09.235Z",
+  "durationMs": 7091,
+  "promptSha256": "f1b3f075cd7b11eca63aa227b04c25bec1fabb7046a719abf06829c297a595cf",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "Agent acknowledged the frustration and used her name, but did not address the missing warning or her intent to leave, and showed no further empathy afterward.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "Your promotion ended last month."
+      ],
+      "reason": "Agent picked up the $25 increase but did not acknowledge her complaint that no one warned her or her statement that she might switch, and moved on without checking her needs.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill."
+      ],
+      "reason": "Agent took action on the account but did not apologize for or take responsibility for the lack of warning, and gave no reference number or follow-up commitment.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The loyalty rate can be applied to your account, which is $75 a month for 12 months.",
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "Agent applied a valid loyalty rate and confirmed terms, but offered no other options such as the $60 plan, did not turn on renewal reminders to prevent a repeat, and did not explain the $90 price or address her switching risk.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Is there anything else I can help with?",
+        "Thanks for calling, Olivia."
+      ],
+      "reason": "Agent recapped the rate and asked if anything else was needed, but closed abruptly with no reference number, no mention of reminders, and no retention or goodwill wording.",
+      "level": 2
+    }
+  ]
+}

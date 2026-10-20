@@ -1,0 +1,54 @@
+{
+  "roleplay": "A4",
+  "rubric": "revised",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:52.474Z",
+  "durationMs": 9956,
+  "promptSha256": "142e518492c28d58f90da0872351712489199d053b800420f64e4cdefdb57e4c",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Oh no, Dana. A double charge right at the start of the month is a pain. I'm sorry."
+      ],
+      "reason": "The agent names the double charge at the start of the month in words specific to this call, but never refers back to Dana's situation (rent due Friday) later.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can you give me the last four digits of the bank account it came out of?"
+      ],
+      "reason": "The agent asks for a detail the fix needs but never plays the problem back, and ignores Dana's mention of not receiving any email.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to refund the second one now.",
+        "I've already sent it through."
+      ],
+      "reason": "The agent states in the first person what they are doing and have done within the call, but takes no extra step to prevent recurrence.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I'm going to refund the second one now.",
+        "You'll get it back in 3 to 5 business days."
+      ],
+      "reason": "The agent refunds the duplicate and gives a time frame, but does not check it against Dana's rent due Friday or offer the faster urgent option.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else I can do for you?",
+        "Alright, thanks for calling. Take care."
+      ],
+      "reason": "The agent checks whether anything else is needed but gives no recap of what was done or what happens next, and no reference number.",
+      "level": 2
+    }
+  ]
+}

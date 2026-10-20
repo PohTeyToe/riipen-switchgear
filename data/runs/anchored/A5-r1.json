@@ -1,0 +1,55 @@
+{
+  "roleplay": "A5",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:06:59.468Z",
+  "durationMs": 6550,
+  "promptSha256": "86bbf8c0293acb71f54a546bfc2f4ce03f53d22b1e5a12297fcea86cbbdf184e",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Okay. Bye.",
+        "There's nothing I can do about the timing."
+      ],
+      "reason": "The agent never acknowledges the double charge or the rent deadline and brushes off her concern.",
+      "level": 1
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Okay. What's your name?",
+        "And what's the problem?"
+      ],
+      "reason": "The agent made the customer repeat her name and problem, which she had already stated in her first message.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Double charges usually come from the bank's side, not ours.",
+        "There's nothing I can do about the timing."
+      ],
+      "reason": "The agent blames the bank and disclaims the ability to act, which is a Not yet behaviour.",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I can request a refund for the second charge. It'll come back at some point.",
+        "There's nothing I can do about the timing."
+      ],
+      "reason": "The agent gives no date and wrong information, since an urgent refund would arrive in about 2 business days, and the typo in her email address goes unfixed.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Okay. Bye."
+      ],
+      "reason": "The call ends with no recap, no check for further needs, and no reference number.",
+      "level": 1
+    }
+  ]
+}

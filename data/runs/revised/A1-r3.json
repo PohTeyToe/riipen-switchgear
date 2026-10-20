@@ -1,0 +1,58 @@
+{
+  "roleplay": "A1",
+  "rubric": "revised",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:11.504Z",
+  "durationMs": 9831,
+  "promptSha256": "a30adbdb2f0dbc0c773e24faafe5507620a4d8d6a57d52a269b2c0e1bd2fe628",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Having the same bill come out of your bank account twice is stressful.",
+        "Because of your rent, I've marked it urgent",
+        "I hope Friday goes smoothly, Dana."
+      ],
+      "reason": "The agent names Dana's specific situation (double charge) and later refers back to her rent and Friday when shaping the fix and closing.",
+      "level": 4
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So that's two charges of $84.50 on the 3rd, rent due Friday, and no payment email. Did I get that right?",
+        "About the missing email: the address on your account says gmial.com instead of gmail.com. I've fixed it"
+      ],
+      "reason": "The agent plays the problem back and checks it, then picks up the passing mention of the missing email and fixes it.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I've just issued the refund for $84.50.",
+        "I've marked it urgent",
+        "I've also added a note to your account so a duplicate payment gets flagged before it's charged."
+      ],
+      "reason": "The agent uses first-person action throughout and, unasked, adds a note that prevents a repeat duplicate charge and fixes the email.",
+      "level": 4
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A normal refund takes 3 to 5 business days, which could miss Friday. Because of your rent, I've marked it urgent, so it goes out today and should reach your bank by Thursday. Does that work for you?"
+      ],
+      "reason": "The agent refunds the amount with a clear date and checks the timing fits Dana's Friday rent deadline.",
+      "level": 4
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap: the duplicate $84.50 is refunded and marked urgent, so it should be in your bank by Thursday, and your email is fixed.",
+        "Your reference number is RF-20417 if anything doesn't show up.",
+        "Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps what was done and what happens next, checks for anything else, and gives a reference number.",
+      "level": 4
+    }
+  ]
+}

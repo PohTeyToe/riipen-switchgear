@@ -1,0 +1,54 @@
+{
+  "roleplay": "A2",
+  "rubric": "draft",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:31.246Z",
+  "durationMs": 10423,
+  "promptSha256": "1b10f6aaeac1d77f2be890961c9a8770d159258778cc52ab2b815b488a2bfcef",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Being charged twice for the same bill is frustrating, and I'm sorry that happened."
+      ],
+      "reason": "The agent acknowledged the frustration and apologized, but did not respond to her rent-on-Friday worry when she raised it.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to confirm, you're seeing two payments of $84.50 on the 3rd, both for this month's bill?"
+      ],
+      "reason": "The agent verified the duplicate charge details, but ignored two cues: the rent due Friday and the missing payment email (which points to the email typo).",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I see them both. I'm refunding the second payment now.",
+        "I've processed it on my end, so there's nothing you need to do."
+      ],
+      "reason": "The agent took direct action on the refund, but did not own the broader problem, since the email issue went unaddressed and no reference number was given.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund will reach your bank in 3 to 5 business days.",
+        "there's nothing you need to do"
+      ],
+      "reason": "The agent refunded the duplicate but did not mark it urgent (about 2 business days) despite rent due Friday, so the money may arrive late. The agent also did not fix the gmial.com email typo or add a note to flag future duplicate payments.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days. Is there anything else I can help you with today?",
+        "Thanks for calling, Dana. Have a good day."
+      ],
+      "reason": "The close was polite and included a recap and an offer of more help, but the recap was incomplete: no reference number, no mention of the email, and no check against her Friday deadline.",
+      "level": 3
+    }
+  ]
+}

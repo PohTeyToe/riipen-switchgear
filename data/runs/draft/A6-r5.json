@@ -1,0 +1,54 @@
+{
+  "roleplay": "A6",
+  "rubric": "draft",
+  "run": 5,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:09:12.733Z",
+  "durationMs": 9460,
+  "promptSha256": "6ea9431c3771eb811a053b3506a4d1c368533f2dbcba00429d5c7d49f5f4771f",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying the same bill twice is frustrating. I'm sorry."
+      ],
+      "reason": "The agent acknowledged the frustration and apologized, but did not respond to the rent-due-Friday stress Dana raised afterward.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+      ],
+      "reason": "The agent verified the charge details accurately, but ignored Dana's mention of the missing email and the Friday rent deadline.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "The duplicate should get refunded.",
+        "A refund request has been put in for it."
+      ],
+      "reason": "The agent used vague, passive language and never said who would act, so Dana had to ask 'Is someone doing it?' and the agent didn't commit to owning the fix.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "It should be back in your account in 3 to 5 business days.",
+        "the duplicate $84.50 will be refunded to your bank in 3 to 5 business days."
+      ],
+      "reason": "The agent started a standard refund but didn't mark it urgent, even though rent is due Friday and 3 to 5 days could miss it. It also left the email typo (gmial.com) unfixed, didn't add the account note and didn't give a reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?",
+        "Thanks for calling, Dana. Take care."
+      ],
+      "reason": "The close was polite and recapped the refund and timeline, but it offered no reference number or next steps and left Dana's Friday rent concern and the email issue unaddressed.",
+      "level": 2
+    }
+  ]
+}

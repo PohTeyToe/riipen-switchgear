@@ -1,0 +1,58 @@
+{
+  "roleplay": "B1",
+  "rubric": "anchored",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:06.019Z",
+  "durationMs": 12474,
+  "promptSha256": "fb467725e2cb3f853a809850a5074ae59e7ff0b718f902b638dcc209fd9d9ec9",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Marcus, I'm sorry. You gave up a day of work and waited all morning for nothing.",
+        "so you're not stuck waiting at the window again",
+        "Sorry again about losing your day."
+      ],
+      "reason": "The agent names Marcus's lost workday and wait in words specific to this call, then refers back to that situation when shaping the fix and at the close.",
+      "level": 4
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "So your install was booked for this morning, nobody came, and the text shows a $50 fee you were told you wouldn't pay. Is that right?",
+        "I checked, and install is free on your plan, so I've removed the $50 fee."
+      ],
+      "reason": "The agent plays the problem back in its own words and checks it before fixing, and it also deals with the $50 fee, the second concern Marcus raised with 'Also'.",
+      "level": 4
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I've removed the $50 fee.",
+        "I've booked you the first slot tomorrow, 8 to 10 am",
+        "I've also put a note on the job asking the technician to call you 30 minutes before they arrive"
+      ],
+      "reason": "The agent uses first-person action throughout and, unasked, adds a technician call-ahead note that helps stop another wasted wait.",
+      "level": 4
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked you the first slot tomorrow, 8 to 10 am, and added a $25 credit to your account for today.",
+        "I've removed the $50 fee."
+      ],
+      "reason": "The agent gives the right fixes (credit, rebooking, fee removal) with a clear date, time and amount, but doesn't check that tomorrow morning works for Marcus or offer the Saturday option.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap: the $50 fee is gone, your install is tomorrow from 8 to 10 am, the technician will call 30 minutes ahead, and there's a $25 credit on your account.",
+        "Your reference number is JB-55120. Is there anything else I can do?"
+      ],
+      "reason": "The agent recaps what was done and what happens next, checks for anything else, and gives a reference number.",
+      "level": 4
+    }
+  ]
+}

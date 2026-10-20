@@ -1,0 +1,54 @@
+{
+  "roleplay": "C2",
+  "rubric": "revised",
+  "run": 2,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:02.757Z",
+  "durationMs": 6621,
+  "promptSha256": "6cdc06e31a00ce51b0d9f49f87a45ee78423abd6494d56e70168ee6b957b0327",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying $25 more out of nowhere is frustrating, Olivia."
+      ],
+      "reason": "The agent names this customer's specific situation (a $25 jump out of nowhere) but never refers back to it later in the call.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "Okay. Your promotion ended last month."
+      ],
+      "reason": "The agent asks only for the account number, never plays the problem back or checks understanding, and ignores the customer's comments about no warning and possibly switching.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Okay, that'll get changed, and it starts with your next bill.",
+        "The loyalty rate can be applied to your account"
+      ],
+      "reason": "Actions are described only in passive or hedged words with no 'I' doing anything, so ownership stays at Developing.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill."
+      ],
+      "reason": "The agent gives a concrete fix with an amount, duration and start date, but does not check it suits her or offer the cheaper plan as a choice.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So the rate goes to $75 a month for the next 12 months, from your next bill. Is there anything else I can help with?",
+        "Thanks for calling, Olivia."
+      ],
+      "reason": "The agent recaps the fix and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

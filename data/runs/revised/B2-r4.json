@@ -1,0 +1,53 @@
+{
+  "roleplay": "B2",
+  "rubric": "revised",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:57.766Z",
+  "durationMs": 9762,
+  "promptSha256": "17845e4524175e521f112155a25ba744b8d24b5e83f13980b7f6796ed7e60b13",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry, Marcus. Taking a day off and having no one show up is really frustrating."
+      ],
+      "reason": "The agent names the specific situation (taking a day off, no one showing up), but never refers back to it later, so it is Proficient, not Advanced.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me confirm: your install was today between 8 and noon, and no technician arrived?"
+      ],
+      "reason": "The agent plays the problem back and checks it, but ignores the $50 install fee the customer mentioned in passing, so it is not Advanced.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to get this rebooked for you right now.",
+        "I've put in a new booking.",
+        "I've done that on my end, so you don't need to call back to book it."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but takes no extra step to prevent a repeat.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A technician will come out to you soon, and they'll reach out to confirm the time."
+      ],
+      "reason": "The agent gives no date, time slot or amount, only 'soon', and omits the $25 credit and the fee removal, so there is no clear what or when.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So to recap, I've rebooked your installation, and a technician will contact you to confirm the time. Is there anything else I can help with?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or named way back if the fix does not happen.",
+      "level": 3
+    }
+  ]
+}

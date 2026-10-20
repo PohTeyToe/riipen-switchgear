@@ -1,0 +1,52 @@
+{
+  "roleplay": "A2",
+  "rubric": "revised",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:00.060Z",
+  "durationMs": 10627,
+  "promptSha256": "8d1d186ca03c52a6541e1ea0b17c77c011785961cb81caf79c375603ebdfd363",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Being charged twice for the same bill is frustrating, and I'm sorry that happened."
+      ],
+      "reason": "The agent names what happened to this customer (a double charge on the same bill), but never refers back to her situation, such as the rent due Friday, later in the call.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to confirm, you're seeing two payments of $84.50 on the 3rd, both for this month's bill?"
+      ],
+      "reason": "The agent plays the problem back and checks it before fixing it, but never picks up the email concern or the rent deadline the customer mentioned.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm refunding the second payment now.",
+        "I've processed it on my end, so there's nothing you need to do."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but takes no extra step to prevent a recurrence or save the customer a future step.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "The refund will reach your bank in 3 to 5 business days. It'll show up as a credit from Northline."
+      ],
+      "reason": "The agent refunds the duplicate and gives the amount and timeframe, but does not check the timing against the rent due Friday or offer the urgent refund option.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, I've refunded the duplicate $84.50, and it'll be back in your account in 3 to 5 business days. Is there anything else I can help you with today?"
+      ],
+      "reason": "The agent recaps what was done and what happens next and asks if anything else is needed, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

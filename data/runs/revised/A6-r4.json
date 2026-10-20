@@ -1,0 +1,53 @@
+{
+  "roleplay": "A6",
+  "rubric": "revised",
+  "run": 4,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:55.931Z",
+  "durationMs": 6612,
+  "promptSha256": "d8d3c67d70673c79d45bb8f92cdf97ab4375a67faf101e821bbed5f3703f12cc",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying the same bill twice is frustrating. I'm sorry."
+      ],
+      "reason": "The agent names the customer's specific situation (being charged twice for one bill) and apologises, but never refers back to it later, such as her rent due Friday.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+      ],
+      "reason": "The agent plays the problem back and checks it, but ignores the second concern, that she got no email, so it does not reach level 4.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "A refund request has been put in for it.",
+        "The duplicate should get refunded."
+      ],
+      "reason": "Actions are described only in passive or hedged words with no 'I' doing anything, even when the customer asked 'Is someone doing it?'.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "It should be back in your account in 3 to 5 business days.",
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days."
+      ],
+      "reason": "The agent gives the amount and a time frame, but 3 to 5 business days could miss the Friday rent and the agent never checks that or offers the urgent option, so it stops at level 3.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?"
+      ],
+      "reason": "The agent recaps the refund and its timing and asks whether anything else is needed, but gives no reference number or way back if the refund doesn't arrive.",
+      "level": 3
+    }
+  ]
+}

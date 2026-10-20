@@ -1,0 +1,53 @@
+{
+  "roleplay": "B3",
+  "rubric": "revised",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:13:10.606Z",
+  "durationMs": 9860,
+  "promptSha256": "7c3adaac0a443cc5287b93174d7ddd8e1016c2076bb87fdd36a11fb9432440bb",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for the inconvenience.",
+        "I understand your frustration."
+      ],
+      "reason": "Both lines are stock phrases that would fit any call and never name the missed appointment or the day off work.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?"
+      ],
+      "reason": "The agent asks only for a detail the fix needs, never plays the problem back, and ignores the $50 fee the customer raised in passing.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to book you a new appointment.",
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent says in the first person what they are doing and have done, but does nothing extra to stop the problem coming back.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent fixes the missed appointment with a specific date, time and amount, but offers no choice and does not check that the slot suits Marcus.",
+      "level": 3
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?"
+      ],
+      "reason": "The agent recaps and checks for anything else, but gives no reference number or way back.",
+      "level": 3
+    }
+  ]
+}

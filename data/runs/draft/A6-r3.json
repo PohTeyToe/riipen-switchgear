@@ -1,0 +1,53 @@
+{
+  "roleplay": "A6",
+  "rubric": "draft",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:08:11.869Z",
+  "durationMs": 4981,
+  "promptSha256": "6ea9431c3771eb811a053b3506a4d1c368533f2dbcba00429d5c7d49f5f4771f",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "Paying the same bill twice is frustrating. I'm sorry."
+      ],
+      "reason": "Agent acknowledged the frustration and apologized, but did not respond to the rent-due-Friday stress Dana raised.",
+      "level": 3
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Let me make sure I have it right: two charges of $84.50 on the 3rd, for one bill?"
+      ],
+      "reason": "Agent accurately confirmed the charge details, but ignored Dana's mention of the missing email and the Friday rent deadline.",
+      "level": 2
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "The duplicate should get refunded.",
+        "A refund request has been put in for it."
+      ],
+      "reason": "Agent used vague, passive wording and never said he would personally handle it, which left Dana asking 'Is someone doing it?'",
+      "level": 1
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "It should be back in your account in 3 to 5 business days."
+      ],
+      "reason": "Agent used the standard refund timeline, which may miss Friday rent, and did not mark it urgent, fix the gmial.com email typo, add an account note, or give a reference number.",
+      "level": 1
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "So, the duplicate $84.50 will be refunded to your bank in 3 to 5 business days. Is there anything else I can help with today?",
+        "Thanks for calling, Dana. Take care."
+      ],
+      "reason": "Agent recapped the refund and offered more help politely, but the recap repeated a timeline that doesn't meet Dana's need, and he gave no reference number or next steps.",
+      "level": 2
+    }
+  ]
+}

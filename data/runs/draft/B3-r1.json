@@ -1,0 +1,55 @@
+{
+  "roleplay": "B3",
+  "rubric": "draft",
+  "run": 1,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:07:16.431Z",
+  "durationMs": 7677,
+  "promptSha256": "d5aa8c91c5d18e3b975d073d1dbe0d4a8d021fa3b863c6476397f86bbc91eb8c",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I apologize for the inconvenience.",
+        "I understand your frustration."
+      ],
+      "reason": "Both statements are generic scripted phrases that never acknowledge the specific impact, such as Marcus taking the day off work and waiting for nothing.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Can I get your account number?",
+        "I'm going to book you a new appointment."
+      ],
+      "reason": "The agent ignored Marcus's $50 install fee complaint and never offered the technician call-ahead note or alternative slots, so key details went unaddressed.",
+      "level": 1
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "I'm going to book you a new appointment.",
+        "I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent took action on the missed appointment and applied the credit, but did not explain or apologize for the miss specifically, and left the fee concern unowned.",
+      "level": 2
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "I've booked it for tomorrow, 8 to 10 am, and I've added a $25 credit for today's missed appointment."
+      ],
+      "reason": "The agent rebooked and applied the policy credit, but never addressed or removed the inapplicable $50 fee, offered the Saturday option or technician call-ahead note, or gave a reference number.",
+      "level": 2
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "To recap, your new installation is tomorrow from 8 to 10 am, and there's a $25 credit on your account. Is there anything else I can help you with?",
+        "Thank you for calling Northline Internet. Have a great day."
+      ],
+      "reason": "The agent gave a clear recap and a polite sign-off, but asked about further help without confirming the fee issue was resolved and gave no reference number.",
+      "level": 3
+    }
+  ]
+}

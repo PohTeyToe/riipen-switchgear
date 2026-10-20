@@ -1,0 +1,55 @@
+{
+  "roleplay": "C3",
+  "rubric": "revised",
+  "run": 3,
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-20T08:14:41.673Z",
+  "durationMs": 10800,
+  "promptSha256": "d95d84860afba3a4a8ade1b6f83ed3c9ae7be1330547b426cda55002769f44fc",
+  "grades": [
+    {
+      "skill": "empathy",
+      "evidence": [
+        "I'm sorry for any inconvenience, Olivia.",
+        "I hear you."
+      ],
+      "reason": "Both lines are stock phrases that would fit any call and say nothing specific about Olivia's surprise bill increase or lack of warning.",
+      "level": 2
+    },
+    {
+      "skill": "listening",
+      "evidence": [
+        "Just to check, your bill went from $65 last month to $90 this month?"
+      ],
+      "reason": "Agent restated the problem and checked it was right before fixing it, but did not pick up her switching concern or the missing warning.",
+      "level": 3
+    },
+    {
+      "skill": "ownership",
+      "evidence": [
+        "Done, I've moved you to the loyalty rate.",
+        "I'll set that up."
+      ],
+      "reason": "Agent states in the first person what they did and will do, but adds no extra step such as renewal reminders to prevent a repeat.",
+      "level": 3
+    },
+    {
+      "skill": "resolution",
+      "evidence": [
+        "A loyalty rate of $75 a month for 12 months, or our slower plan at $60 a month. Both start on your next bill.",
+        "Which fits how you use the internet?"
+      ],
+      "reason": "Agent gave a fix with amount, term and start date, and offered a choice fitted to her usage, so she could keep her speed for night streaming.",
+      "level": 4
+    },
+    {
+      "skill": "close",
+      "evidence": [
+        "Anything else?",
+        "Have a great day."
+      ],
+      "reason": "Agent checked whether she needed anything else but gave no recap of the new rate or when it starts, and no reference number.",
+      "level": 2
+    }
+  ]
+}
